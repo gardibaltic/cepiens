@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cepiens · Meistara garša · Āgenskalns, Rīga</title>
+
+<!-- ===== SEO — lai Google atrod un saprot lapu =====
+     SVARĪGI: aizvieto www.cepiens.lv ar savu īsto domēnu (3 vietās zemāk un JSON-LD blokā). -->
+<meta name="description" content="Cepiens — mūsdienīga latviešu virtuve ar Āzijas akcentiem Āgenskalnā, Rīgā. Vakariņas à la carte: Tom Yum, steiki, akmeņasara fileja, Breslin burgers. Brokastis visu dienu. Meža iela 4A. Kopš 2011.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://www.cepiens.lv/">
+<meta property="og:type" content="restaurant">
+<meta property="og:locale" content="lv_LV">
+<meta property="og:title" content="Cepiens · Meistara garša · Āgenskalns, Rīga">
+<meta property="og:description" content="Mūsdienīga latviešu virtuve ar Āzijas akcentiem. Vakariņas ar meistara precizitāti — Tom Yum, steiki, akmeņasaris. Meža iela 4A, Rīga.">
+<meta property="og:url" content="https://www.cepiens.lv/">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Restaurant",
+  "name":"Cepiens",
+  "url":"https://www.cepiens.lv/",
+  "telephone":"+37122337221",
+  "servesCuisine":["Latviešu virtuve","Āzijas virtuve"],
+  "priceRange":"€€",
+  "aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","bestRating":"5","reviewCount":"2"},
+  "address":{
+    "@type":"PostalAddress",
+    "streetAddress":"Meža iela 4A",
+    "addressLocality":"Rīga",
+    "postalCode":"LV-1048",
+    "addressCountry":"LV"
+  },
+  "openingHoursSpecification":[
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday"],"opens":"10:00","closes":"21:00"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Friday","Saturday"],"opens":"10:00","closes":"21:00"}
+  ],
+  "specialOpeningHoursSpecification":[
+    {"@type":"OpeningHoursSpecification","validFrom":"2026-08-22","validThrough":"2026-08-23","opens":"00:00","closes":"00:00"},
+    {"@type":"OpeningHoursSpecification","validFrom":"2026-08-29","validThrough":"2026-08-30","opens":"00:00","closes":"00:00"}
+  ],
+  "sameAs":[
+    "https://www.instagram.com/cepiens",
+    "https://www.facebook.com/pages/Cepiens/1094534730586253/"
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --ink:#111009;--ink60:rgba(17,16,9,0.6);--ink30:rgba(17,16,9,0.18);--ink08:rgba(17,16,9,0.06);
+  --paper:#FDFBF6;--paper2:#F5F0E8;
+  --red:#C13B2A;--gold:#9A7B3C;
+  --serif:'Playfair Display',Georgia,serif;--sans:'Outfit',sans-serif;
+}
+body{font-family:var(--sans);background:var(--paper);color:var(--ink);line-height:1.6;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+
+nav{display:flex;justify-content:space-between;align-items:center;padding:1.2rem clamp(1.2rem,2.5vw,3rem);border-bottom:1px solid var(--ink30);background:var(--paper);position:sticky;top:0;z-index:100}
+.logo{font-family:var(--serif);font-size:1.35rem;font-weight:400;letter-spacing:.04em}
+.logo span{font-style:italic;color:var(--red)}
+.nav-links{display:flex;gap:clamp(.9rem,1.5vw,2rem);list-style:none}
+.nav-links a{font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink60);transition:color .2s;white-space:nowrap}
+.nav-links a:hover{color:var(--ink)}
+.nav-cta{font-size:.72rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;background:var(--ink);color:var(--paper);padding:.55rem 1.3rem;transition:background .2s;white-space:nowrap}
+.nav-cta:hover{background:var(--red)}
+/* Telefona numurs nekad nedalās divās rindās */
+a[href^="tel:"]{white-space:nowrap}
+
+/* ===== AUGUSTA PAZIŅOJUMS =====
+   Josla lapas augšā + piezīmes darba laikā un kājenē.
+   Paslēpjas AUTOMĀTISKI pēc 31.08.2026 (sk. skriptu "AUGUSTA PAZIŅOJUMS" lapas beigās).
+   Ja vajag citu datumu — maini AUG_END vērtību tajā skriptā. */
+.notice-bar{background:var(--ink);color:rgba(255,255,255,.72);padding:.8rem 3rem;text-align:center;font-size:.82rem;line-height:1.6}
+.notice-bar strong.nb-label{font-family:var(--serif);font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:#fff;font-weight:400}
+.notice-bar b{font-weight:500;color:#fff}
+.notice-bar a{color:#fff;border-bottom:1px solid rgba(255,255,255,.4);white-space:nowrap}
+.notice-bar a:hover{border-bottom-color:#fff}
+.hours-august{border:1px solid var(--ink30);border-top:none;background:var(--paper);padding:1.3rem 1.6rem;font-size:.85rem;color:var(--ink60);line-height:1.75}
+.hours-august b{color:var(--ink);font-weight:500}
+.hours-august .ha-label{font-size:.68rem;letter-spacing:.15em;text-transform:uppercase;color:var(--red);display:block;margin-bottom:.35rem}
+.rf-notice{background:var(--paper2);border-bottom:1px solid var(--ink08);padding:1rem 1.8rem;font-size:.82rem;color:var(--ink60);line-height:1.7}
+.rf-notice b{color:var(--ink);font-weight:500}
+@media(max-width:820px){
+  .notice-bar{padding:.7rem 1.1rem;font-size:.76rem}
+  .hours-august{padding:1.1rem 1.2rem;font-size:.8rem}
+  .rf-notice{padding:.9rem 1.3rem;font-size:.78rem}
+}
+
+.hero{display:grid;grid-template-columns:1fr 1fr;min-height:88vh}
+.hero-left{padding:5rem 3rem;display:flex;flex-direction:column;justify-content:center}
+.hero-right{background:var(--ink);display:flex;align-items:center;justify-content:center;padding:3rem;position:relative;overflow:hidden}
+.eyebrow{font-size:.68rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:1.2rem}
+.hero-title{font-family:var(--serif);font-size:clamp(2.8rem,5vw,4.8rem);font-weight:400;line-height:1.08;margin-bottom:.6rem;color:var(--ink)}
+.hero-title em{font-style:italic;color:var(--red)}
+.hero-tagline{font-family:var(--serif);font-style:italic;font-size:1.15rem;color:var(--gold);margin-bottom:1.5rem;letter-spacing:.02em}
+.hero-sub{font-size:.95rem;font-weight:300;color:var(--ink60);line-height:1.75;max-width:40ch;margin-bottom:2.2rem}
+.hero-sub strong{font-weight:500;color:var(--ink)}
+.btn-row{display:flex;gap:.8rem;align-items:center;flex-wrap:wrap}
+.btn-dark{font-size:.75rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;background:var(--ink);color:var(--paper);padding:.75rem 1.6rem;display:inline-block;transition:background .2s}
+.btn-dark:hover{background:var(--red)}
+.btn-outline{font-size:.75rem;letter-spacing:.08em;color:var(--ink60);display:inline-flex;align-items:center;gap:.35rem;transition:color .2s}
+.btn-outline:hover{color:var(--ink)}
+
+.hero-badge{color:var(--paper);text-align:center}
+.badge-ring{width:180px;height:180px;border-radius:50%;border:1px solid rgba(255,255,255,.2);display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem}
+.badge-inner{width:146px;height:146px;border-radius:50%;border:1px solid rgba(255,255,255,.12);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px}
+.badge-num{font-family:var(--serif);font-size:2.8rem;font-weight:400;color:#fff;line-height:1}
+.badge-label{font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.5)}
+.hero-visual-text{font-family:var(--serif);font-size:1rem;font-style:italic;color:rgba(255,255,255,.45);margin-top:1rem}
+.hero-deco{position:absolute;top:2rem;right:2rem;width:80px;height:80px;border-radius:50%;border:1px solid rgba(255,255,255,.08)}
+.hero-deco2{position:absolute;bottom:3rem;left:2rem;width:50px;height:50px;border-radius:50%;border:1px solid rgba(255,255,255,.06)}
+
+.strip{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--ink30);border-bottom:1px solid var(--ink30)}
+.strip-item{padding:1.6rem 2rem;border-right:1px solid var(--ink30)}
+.strip-item:last-child{border-right:none}
+.strip-num{font-family:var(--serif);font-size:2rem;font-weight:400;line-height:1;margin-bottom:.2rem}
+.strip-label{font-size:.72rem;font-weight:400;letter-spacing:.08em;text-transform:uppercase;color:var(--ink60)}
+
+.section{padding:5rem 3rem}
+.sec-head{margin-bottom:3rem}
+.sec-eyebrow{font-size:.68rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:.7rem}
+.sec-title{font-family:var(--serif);font-size:clamp(2rem,3vw,2.8rem);font-weight:400;line-height:1.1;color:var(--ink)}
+.sec-title em{font-style:italic;color:var(--red)}
+
+.menu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--ink30);border:1px solid var(--ink30)}
+/* Izceltie bloki (Meistara galds, brokastu flagmanis) */
+.feature-box{padding:1.8rem 1.6rem;border:1px solid var(--ink30);display:flex;flex-wrap:wrap;gap:1.2rem;align-items:center;justify-content:space-between}
+.feature-box .fb-text{flex:1 1 300px;min-width:0}
+.feature-box .fb-title{font-family:var(--serif);font-size:1.4rem;line-height:1.25;margin-bottom:.4rem}
+.feature-box .fb-price{font-family:var(--serif);font-size:1.7rem;color:var(--red)}
+/* Jaunumi ēdienkartē */
+.news-box{margin-top:1.5rem;padding:1.8rem 1.6rem;background:var(--paper2);border:1px solid var(--ink30)}
+.news-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.4rem}
+/* Google 5★ atsauksmju kartītes */
+.g-block{margin-top:3rem}
+.g-head{display:flex;align-items:center;gap:.6rem;justify-content:center;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink60);margin-bottom:1.6rem}
+.g-logo{font-family:var(--sans);font-size:1.15rem;letter-spacing:0;text-transform:none;font-weight:500}
+.g-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.1rem}
+.g-card{background:#fff;border:1px solid rgba(17,16,9,.12);border-radius:10px;padding:1.15rem 1.1rem;box-shadow:0 2px 10px rgba(17,16,9,.05)}
+.g-top{display:flex;align-items:center;gap:.6rem;margin-bottom:.6rem}
+.g-av{width:34px;height:34px;border-radius:50%;color:#fff;display:flex;align-items:center;justify-content:center;font-size:.95rem;font-weight:500;flex:0 0 34px}
+.g-name{display:block;font-size:.85rem;font-weight:500;color:var(--ink);line-height:1.25}
+.g-meta{display:block;font-size:.7rem;color:var(--ink60)}
+.g-stars{color:#F4B400;font-size:.85rem;letter-spacing:.06em;margin-bottom:.55rem}
+.g-when{color:var(--ink60);font-size:.7rem;letter-spacing:0;margin-left:.35rem}
+.g-text{font-size:.82rem;line-height:1.55;color:var(--ink);font-weight:300}
+.menu-card{background:var(--paper);padding:1.8rem 1.6rem;transition:background .2s}
+.menu-card:hover{background:var(--paper2)}
+.menu-tag{font-size:.63rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--red);margin-bottom:.7rem}
+.menu-name{font-family:var(--serif);font-size:1.25rem;font-weight:400;line-height:1.25;margin-bottom:.5rem}
+.menu-desc{font-size:.83rem;font-weight:300;color:var(--ink60);line-height:1.65;margin-bottom:1.1rem}
+.menu-price{font-family:var(--serif);font-size:1rem;font-weight:400;color:var(--ink)}
+
+.heritage{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--ink30)}
+.heritage-dark{background:var(--ink);padding:5rem 3rem;display:flex;flex-direction:column;justify-content:center}
+.heritage-light{padding:5rem 3rem;display:flex;flex-direction:column;justify-content:center}
+.heritage-quote{font-family:var(--serif);font-size:1.6rem;font-style:italic;font-weight:400;color:rgba(255,255,255,.9);line-height:1.5;margin-bottom:1.5rem;max-width:32ch}
+.heritage-body{font-size:.88rem;font-weight:300;color:rgba(255,255,255,.55);line-height:1.8;max-width:42ch;margin-bottom:1.5rem}
+.heritage-tag{font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+.heritage-list{list-style:none;margin-top:1.5rem}
+.heritage-list li{font-size:.88rem;font-weight:300;color:var(--ink60);padding:.5rem 0;border-bottom:1px solid var(--ink08);display:flex;align-items:center;gap:.6rem}
+.heritage-list li::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--red);flex-shrink:0}
+
+.hours-section{background:var(--paper2);border-top:1px solid var(--ink30);padding:4rem 3rem}
+.hours-grid{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--ink30);margin-top:2.5rem}
+.hours-col{padding:2rem;border-right:1px solid var(--ink30)}
+.hours-col:last-child{border-right:none}
+.hours-day{font-size:.68rem;letter-spacing:.15em;text-transform:uppercase;color:var(--ink60);margin-bottom:.4rem}
+.hours-time{font-family:var(--serif);font-size:1.6rem;font-weight:400;line-height:1.2}
+.hours-note{font-size:.78rem;color:var(--ink60);margin-top:.3rem}
+
+/* ===== Atsauksmes ===== */
+.reviews-section{padding:5rem 3rem;border-top:1px solid var(--ink30)}
+.reviews-wrap{display:grid;grid-template-columns:280px 1fr;gap:1px;background:var(--ink30);border:1px solid var(--ink30);max-width:1100px;margin:0 auto}
+.rev-summary{background:var(--ink);color:var(--paper);padding:2.5rem 2rem;display:flex;flex-direction:column;justify-content:center;text-align:center}
+.rev-score{font-family:var(--serif);font-size:3.6rem;font-weight:400;line-height:1;color:#fff}
+.rev-stars{color:var(--gold);font-size:1.05rem;letter-spacing:.25em;margin:.6rem 0 .3rem}
+.rev-count{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.45);margin-bottom:1.4rem}
+.rev-cat{display:flex;justify-content:space-between;align-items:center;font-size:.78rem;font-weight:300;color:rgba(255,255,255,.65);padding:.35rem 0;border-bottom:1px solid rgba(255,255,255,.08)}
+.rev-cat:last-child{border-bottom:none}
+.rev-cat .st{color:var(--gold);font-size:.72rem;letter-spacing:.12em}
+.reviews-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--ink30)}
+.review-card{background:var(--paper);padding:2.2rem 2rem;display:flex;flex-direction:column}
+.review-card .st-row{color:var(--gold);font-size:.85rem;letter-spacing:.22em;margin-bottom:1rem}
+.rev-text{font-family:var(--serif);font-style:italic;font-size:1.15rem;font-weight:400;line-height:1.55;color:var(--ink);margin-bottom:1.4rem;flex:1}
+.rev-author{font-size:.75rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--ink)}
+.rev-date{font-size:.72rem;font-weight:300;color:var(--ink60);margin-top:.2rem}
+.rev-src{text-align:center;margin-top:1.4rem;font-size:.72rem;color:var(--ink60)}
+.rev-src a{color:var(--red);border-bottom:1px solid var(--ink30);transition:border-color .2s}
+.rev-src a:hover{border-color:var(--red)}
+
+.cta-section{padding:6rem 3rem;text-align:center;border-top:1px solid var(--ink30)}
+.cta-title{font-family:var(--serif);font-size:clamp(2.2rem,4vw,3.6rem);font-weight:400;line-height:1.1;margin-bottom:1rem}
+.cta-title em{font-style:italic;color:var(--red)}
+.cta-sub{font-size:.95rem;font-weight:300;color:var(--ink60);margin-bottom:2.2rem}
+.cta-row{display:flex;gap:1rem;justify-content:center;align-items:center;flex-wrap:wrap}
+.cta-link{font-size:.78rem;color:var(--ink60);letter-spacing:.06em;display:inline-flex;align-items:center;gap:.3rem;transition:color .2s}
+.cta-link:hover{color:var(--ink)}
+
+footer{background:var(--ink);padding:2.5rem 3rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+.footer-logo{font-family:var(--serif);font-size:1.2rem;color:#fff;font-weight:400}
+.footer-logo span{font-style:italic;color:var(--red)}
+.footer-info{font-size:.78rem;color:rgba(255,255,255,.4);text-align:center;line-height:1.7}
+.footer-ig{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.35);transition:color .2s}
+.footer-ig:hover{color:rgba(255,255,255,.7)}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.hero-left>*{animation:fadeUp .5s ease both}
+.hero-left>.eyebrow{animation-delay:.05s}
+.hero-left>.hero-title{animation-delay:.15s}
+.hero-left>.hero-tagline{animation-delay:.22s}
+.hero-left>.hero-sub{animation-delay:.28s}
+.hero-left>.btn-row{animation-delay:.35s}
+
+/* Rezervācijas modālis */
+.modal-overlay{position:fixed;inset:0;background:rgba(17,16,9,.7);backdrop-filter:blur(4px);display:none;align-items:center;justify-content:center;z-index:1000;padding:1.5rem;opacity:0;transition:opacity .25s}
+.modal-overlay.open{display:flex;opacity:1}
+.modal-box{background:var(--paper);max-width:560px;width:100%;max-height:92vh;overflow:hidden;display:flex;flex-direction:column;border:1px solid var(--ink30);box-shadow:0 30px 80px rgba(0,0,0,.4);transform:translateY(14px);transition:transform .25s}
+.modal-overlay.open .modal-box{transform:translateY(0)}
+.modal-head{padding:1.6rem 1.8rem 1.2rem;border-bottom:1px solid var(--ink30);display:flex;justify-content:space-between;align-items:flex-start;gap:1rem}
+.modal-eyebrow{font-size:.66rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:.4rem}
+.modal-title{font-family:var(--serif);font-size:1.5rem;font-weight:400;line-height:1.15}
+.modal-title em{font-style:italic;color:var(--red)}
+.modal-close{background:none;border:none;font-size:1.6rem;line-height:1;color:var(--ink60);cursor:pointer;flex-shrink:0;transition:color .2s}
+.modal-close:hover{color:var(--red)}
+.modal-body{overflow-y:auto;flex:1}
+.modal-fallback{padding:1rem 1.8rem;font-size:.8rem;color:var(--ink60);line-height:1.7;border-top:1px solid var(--ink08);background:var(--paper2)}
+.modal-fallback a{color:var(--red);font-weight:500}
+
+/* Rezervāciju forma (GloriaFood stils) */
+.rform{padding:1.6rem 1.8rem 1.8rem}
+.rform-row{display:grid;grid-template-columns:1fr 1fr;gap:.9rem;margin-bottom:.9rem}
+.rfield{display:flex;flex-direction:column;gap:.35rem}
+.rfield.full{grid-column:1 / -1}
+.rfield label{font-size:.66rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--ink60)}
+.rfield input,.rfield select,.rfield textarea{font-family:var(--sans);font-size:.95rem;color:var(--ink);background:var(--paper);border:1px solid var(--ink30);padding:.7rem .8rem;outline:none;transition:border-color .2s;width:100%}
+.rfield input:focus,.rfield select:focus,.rfield textarea:focus{border-color:var(--red)}
+.rfield textarea{resize:vertical;min-height:62px}
+.rform-submit{width:100%;font-family:var(--sans);font-size:.8rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;background:var(--red);color:#fff;border:none;padding:.95rem;margin-top:.5rem;cursor:pointer;transition:background .2s}
+.rform-submit:hover{background:var(--ink)}
+.rform-submit:disabled{opacity:.6;cursor:default}
+.rform-note{font-size:.72rem;color:var(--ink60);text-align:center;margin-top:.8rem}
+.rform-success{padding:3rem 2rem;text-align:center}
+.rform-success .rs-mark{font-size:2.4rem;color:var(--red);margin-bottom:.6rem}
+.rform-success h3{font-family:var(--serif);font-size:1.5rem;font-weight:400;margin-bottom:.5rem}
+.rform-success h3 em{font-style:italic;color:var(--red)}
+.rform-success p{font-size:.88rem;color:var(--ink60);line-height:1.7}
+
+/* ===== Aptauja (survey) ===== */
+/* ===== DARBA SLUDINĀJUMA BLOKS (pilnā lapa: darbs.html) ===== */
+.job-teaser{background:var(--paper2);border-top:1px solid var(--ink30);padding:4.5rem 3rem}
+.jt-in{max-width:1180px;margin:0 auto}
+.jt-title{font-family:var(--serif);font-size:clamp(1.9rem,3vw,2.6rem);font-weight:400;line-height:1.15;margin-bottom:1rem}
+.jt-title em{font-style:italic;color:var(--red)}
+.jt-text{font-size:.98rem;font-weight:300;color:var(--ink60);max-width:64ch;line-height:1.85;margin-bottom:1.8rem}
+.jt-btns{display:flex;gap:1.4rem;align-items:center;flex-wrap:wrap}
+@media(max-width:640px){
+  .job-teaser{padding:3rem 1.3rem}
+  .jt-btns .btn-dark{width:100%;text-align:center}
+}
+
+.survey-cta{background:var(--ink);padding:5rem 3rem;text-align:center;border-top:1px solid var(--ink30)}
+.survey-cta .sec-eyebrow{color:var(--gold)}
+.survey-cta h2{font-family:var(--serif);font-size:clamp(2rem,3.5vw,3rem);font-weight:400;line-height:1.12;margin-bottom:1rem;color:#fff}
+.survey-cta h2 em{font-style:italic;color:var(--red)}
+.survey-cta p{font-size:.95rem;font-weight:300;color:rgba(255,255,255,.6);max-width:48ch;margin:0 auto 2rem}
+.survey-cta .btn-dark{background:var(--red)}
+.survey-cta .btn-dark:hover{background:var(--paper);color:var(--ink)}
+.slangs{display:flex;gap:.5rem;justify-content:flex-end;padding:1rem 1.8rem .2rem}
+.slangs button{font-family:var(--sans);border:1px solid var(--ink30);background:var(--paper);color:var(--ink60);padding:.35rem .8rem;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;transition:all .2s}
+.slangs button.active{background:var(--red);color:#fff;border-color:var(--red)}
+.sintro{padding:.2rem 1.8rem 0;font-size:.85rem;color:var(--gold);font-weight:500;line-height:1.5}
+.sform{padding:1rem 1.8rem 1.8rem}
+.sfield{padding:1rem 0;border-top:1px solid var(--ink08)}
+.sfield:first-of-type{border-top:none}
+.sfield .sq{font-family:var(--serif);font-size:1.02rem;font-weight:400;line-height:1.3;margin-bottom:.7rem;color:var(--ink)}
+.sfield .ssub{font-size:.8rem;color:var(--ink60);margin:.8rem 0 .4rem;font-weight:500}
+.sopt{display:flex;align-items:flex-start;gap:.6rem;padding:.3rem 0;font-size:.9rem;color:var(--ink);cursor:pointer}
+.sopt input{margin-top:.2rem;width:16px;height:16px;accent-color:var(--red);flex-shrink:0}
+.snps{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.3rem}
+.snps label{display:flex;flex-direction:column;align-items:center;gap:3px;font-size:.8rem;color:var(--ink);cursor:pointer;width:2rem}
+.snps label input{width:16px;height:16px;accent-color:var(--red)}
+.snps .nleg{width:100%;display:flex;justify-content:space-between;font-size:.72rem;color:var(--ink60);margin-top:.3rem}
+.sform textarea,.sform input[type=text]{font-family:var(--sans);font-size:.92rem;color:var(--ink);background:var(--paper);border:1px solid var(--ink30);padding:.6rem .7rem;outline:none;width:100%;margin-bottom:.5rem}
+.sform textarea:focus,.sform input[type=text]:focus{border-color:var(--red)}
+.sform textarea{resize:vertical;min-height:54px}
+.ssubmit{width:100%;font-family:var(--sans);font-size:.8rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;background:var(--red);color:#fff;border:none;padding:.95rem;margin-top:1rem;cursor:pointer;transition:background .2s}
+.ssubmit:hover{background:var(--ink)}
+.ssuccess{padding:3rem 2rem;text-align:center;display:none}
+.ssuccess .rs-mark{font-size:2.4rem;color:var(--red);margin-bottom:.6rem}
+.ssuccess h3{font-family:var(--serif);font-size:1.5rem;font-weight:400;margin-bottom:.5rem}
+.ssuccess h3 em{font-style:italic;color:var(--red)}
+.ssuccess p{font-size:.88rem;color:var(--ink60);line-height:1.7}
+
+/* ===== Valodu pārslēdzējs ===== */
+.langs{display:flex;gap:.2rem;align-items:center}
+.langs button{font-family:var(--sans);background:none;border:1px solid transparent;color:var(--ink60);font-size:.68rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;padding:.3rem .45rem;cursor:pointer;transition:all .2s}
+.langs button:hover{color:var(--ink)}
+.langs button.active{color:var(--ink);border-color:var(--ink30)}
+.langs-item{display:none}
+
+/* ===== RESPONSĪVS / MOBILAIS ===== */
+.nav-burger{display:none;flex-direction:column;justify-content:center;gap:5px;width:40px;height:40px;background:none;border:1px solid var(--ink30);cursor:pointer;padding:9px;flex-shrink:0}
+.nav-burger span{display:block;height:2px;background:var(--ink);transition:transform .25s,opacity .25s}
+
+/* Šaurie klēpjdatori: navigācijā ir daudz punktu (t.sk. "Darbs") — sablīvējam, lai nelūzt divās rindās */
+@media (min-width:901px) and (max-width:1180px){
+  .nav-links a{font-size:.68rem;letter-spacing:.06em}
+  .logo{font-size:1.05rem;white-space:nowrap}
+  .nav-cta{padding:.5rem .9rem;font-size:.66rem}
+  .langs button{padding:.2rem .4rem}
+}
+
+@media (max-width:900px){
+  /* Kompakta viena rinda: logo · telefons · izvēlne */
+  nav{flex-wrap:nowrap;gap:.6rem;padding:.75rem 1rem}
+  .logo{font-size:1.02rem;flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .nav-cta{padding:.45rem .75rem;font-size:.64rem;white-space:nowrap}
+  .nav-burger{display:flex}
+  nav.open .nav-burger span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  nav.open .nav-burger span:nth-child(2){opacity:0}
+  nav.open .nav-burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+  .nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:var(--paper);border-bottom:1px solid var(--ink30);flex-direction:column;gap:0;padding:.3rem 0 .5rem;box-shadow:0 18px 34px rgba(17,16,9,.14)}
+  nav.open .nav-links{display:flex}
+  .nav-links li{border-top:1px solid var(--ink08)}
+  .nav-links a{display:block;padding:.85rem 1.2rem;font-size:.8rem}
+  .langs-desktop{display:none}
+  .langs-item{display:block;border-top:none !important}
+  .langs-mobile{justify-content:center;padding:.55rem 0 .1rem}
+
+  /* Hero: vispirms teksts, tad mazāks tumšais bloks */
+  .hero{grid-template-columns:1fr;min-height:auto}
+  .hero-left{padding:2.5rem 1.3rem 2.2rem;order:1}
+  .hero-right{order:2;padding:2rem 1.3rem;min-height:auto}
+  .badge-ring{width:130px;height:130px;margin-bottom:1rem}
+  .badge-inner{width:106px;height:106px}
+  .badge-num{font-size:2rem}
+  .hero-visual-text{margin-top:.5rem;font-size:.9rem}
+  .hero-deco,.hero-deco2{display:none}
+
+  .section{padding:3rem 1.3rem}
+  .sec-head{margin-bottom:1.8rem}
+  .menu-grid{grid-template-columns:1fr}
+  .menu-card{padding:1.35rem 1.2rem}
+  .menu-desc{margin-bottom:.7rem}
+
+  /* Izceltie bloki telefonā: viss vienā kolonnā, poga/cena pilnā platumā */
+  .feature-box{flex-direction:column;align-items:stretch;gap:.9rem;padding:1.5rem 1.3rem}
+  .feature-box .fb-text{flex:1 1 auto}
+  .feature-box .fb-title{font-size:1.25rem}
+  .feature-box .fb-price{font-size:1.9rem;text-align:left}
+  .feature-box .btn-dark{text-align:center;width:100%}
+
+  /* Jaunumi: katrs punkts atdalīts ar līniju, lai nesaplūst */
+  .news-box{padding:1.5rem 1.3rem}
+  .news-grid{grid-template-columns:1fr;gap:0}
+  .news-grid>div{padding:1rem 0;border-top:1px solid var(--ink30)}
+  .news-grid>div:first-child{padding-top:0;border-top:none}
+  .news-grid>div:last-child{padding-bottom:0}
+
+  /* Google kartītes telefonā: lasāmāks teksts */
+  .g-grid{grid-template-columns:1fr;gap:.9rem}
+  .g-card{padding:1.25rem 1.2rem}
+  .g-text{font-size:.92rem;line-height:1.6}
+  .g-name{font-size:.92rem}
+  .g-stars{font-size:1rem}
+
+  .heritage{grid-template-columns:1fr}
+  .heritage-dark,.heritage-light{padding:3rem 1.3rem}
+
+  .hours-section{padding:3rem 1.3rem}
+  .hours-grid{grid-template-columns:1fr;margin-top:1.8rem}
+  .hours-col{padding:1.4rem 1.3rem;border-right:none;border-bottom:1px solid var(--ink30)}
+  .hours-col:last-child{border-bottom:none}
+
+  .reviews-section{padding:3rem 1.3rem}
+  .reviews-wrap{grid-template-columns:1fr}
+  .reviews-grid{grid-template-columns:1fr}
+  .rev-summary{padding:2rem 1.3rem}
+  .review-card{padding:1.7rem 1.3rem}
+
+  .cta-section{padding:3.5rem 1.3rem}
+  .cta-row{flex-direction:column;gap:1rem}
+  .survey-cta{padding:3.5rem 1.3rem}
+
+  footer{flex-direction:column;text-align:center;padding:2.5rem 1.3rem;gap:.8rem}
+}
+
+@media (max-width:600px){
+  .strip{grid-template-columns:repeat(2,1fr)}
+  .strip-item{padding:1.3rem 1.2rem}
+  .strip-item:nth-child(2n){border-right:none}
+  .strip-item:nth-child(-n+2){border-bottom:1px solid var(--ink30)}
+
+  .hero-title{font-size:clamp(2.4rem,9vw,3.2rem)}
+  .btn-row{gap:.6rem}
+  .btn-dark{padding:.75rem 1.3rem}
+  .strip-num{font-size:1.5rem}
+  .strip-label{font-size:.7rem;line-height:1.35}
+  .g-head{font-size:.66rem;letter-spacing:.12em}
+  /* Telefona saites — pietiekami liels pieskāriena laukums */
+  .cta-link{padding:.35rem 0}
+  .cta-link[href^="tel:"]{font-size:1.05rem;font-weight:500;color:var(--ink)}
+
+  .rform-row{grid-template-columns:1fr}
+
+  .modal-overlay{padding:0;align-items:flex-end}
+  .modal-box{max-width:100%;max-height:94vh;border:none}
+  .modal-head{padding:1.3rem 1.3rem 1rem}
+  .modal-title{font-size:1.3rem}
+  .rform,.sform{padding:1.3rem 1.3rem 1.6rem}
+  .slangs{padding:1rem 1.3rem .2rem}
+  .sintro{padding:.2rem 1.3rem 0}
+}
+
+
+/* ===== JAUNĀ ĒDIENKARTE (2026-11) ===== */
+.ml{margin-top:1.5rem}
+.ml-lunch{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--ink30);border:1px solid var(--ink30);margin-bottom:2.5rem}
+.ml-lunch>div{background:var(--paper2);padding:1.1rem 1.4rem}
+.ml-lunch-k{font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:var(--red);margin-bottom:.25rem}
+.ml-lunch-t{font-family:var(--serif);font-size:1rem}
+.ml-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:2.5rem}
+.ml-cols2{grid-template-columns:repeat(2,1fr)}
+.ml-cat{margin-bottom:2rem}
+.ml-h{font-family:var(--serif);font-weight:400;font-size:1.35rem;border-bottom:1px solid var(--ink);padding-bottom:.4rem;margin-bottom:.4rem}
+.ml-row{display:flex;justify-content:space-between;gap:1rem;padding:.75rem 0;border-bottom:1px solid var(--ink08)}
+.ml-name{font-family:var(--serif);font-size:1.05rem;line-height:1.3}
+.ml-al{font-family:var(--sans);font-size:.6rem;color:var(--ink60);margin-left:.25rem}
+.ml-tag{display:inline-block;font-family:var(--sans);font-size:.58rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-left:.5rem;vertical-align:.15em}
+.ml-desc{font-size:.82rem;color:var(--ink60);margin-top:.15rem;line-height:1.45}
+.ml-price{font-family:var(--serif);font-size:1.05rem;white-space:nowrap}
+.ml-legend{font-size:.72rem;color:var(--ink60);margin-top:.5rem;line-height:1.7}
+/* ===== ZIEMASSVĒTKI ===== */
+.xmas{background:var(--paper2)}
+.xm-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.xm-card{background:var(--paper);border:1px solid var(--ink30);padding:1.8rem}
+.xm-t{font-family:var(--serif);font-weight:400;font-size:1.4rem;line-height:1.25;margin:.5rem 0 .8rem}
+.xm-d{font-size:.9rem;color:var(--ink60);line-height:1.65}
+.xm-n{font-size:.85rem;margin-top:1rem;color:var(--ink)}
+.xm-bottom{display:grid;grid-template-columns:minmax(280px,400px) 1fr;gap:2.5rem;align-items:center;margin-top:2.5rem}
+.xm-hours{font-family:var(--serif);font-size:1.2rem;margin-bottom:1.2rem}
+@media(max-width:900px){.ml-cols,.ml-cols2,.xm-grid,.ml-lunch,.xm-bottom{grid-template-columns:1fr}.ml-cols{gap:0}}
+</style>
+</head>
+<body>
+
+<!-- ===== AUGUSTA PAZIŅOJUMA JOSLA (paslēpjas automātiski pēc 31.08.2026) ===== -->
+<div class="notice-bar" id="augustNotice">
+  <strong class="nb-label" data-en="Dear guests" data-ru="Дорогие гости">Mīļie viesi</strong>
+  <span data-html
+        data-en="— until <b>30 August</b> we serve evenings <b>18:00–22:00</b> by prior reservation only. Daytime everything as usual. On <b>22–23 and 29–30 August we rest</b> — from September we are with you on Saturdays again."
+        data-ru="— до <b>30 августа</b> вечером <b>18:00–22:00</b> обслуживаем только по предварительной брони. Днём всё как обычно. <b>22–23 и 29–30 августа отдыхаем</b> — с сентября снова с вами и по субботам.">— līdz <b>30. augustam</b> vakaros <b>18:00–22:00</b> apkalpojam tikai ar iepriekšēju rezervāciju. Dienā viss kā parasti. <b>22.–23. un 29.–30. augustā atpūšamies</b> — no septembra atkal ar jums arī sestdienās.</span>
+  <a href="#" data-reserve data-en="Book →" data-ru="Забронировать →">Rezervēt →</a>
+</div>
+
+<nav>
+  <a class="logo" href="#">Cepiens <span>·</span> Āgenskalns</a>
+  <ul class="nav-links">
+    <li class="langs-item"><div class="langs langs-mobile">
+      <button type="button" data-lang="lv" class="active">LV</button>
+      <button type="button" data-lang="ru">RU</button>
+      <button type="button" data-lang="en">EN</button>
+    </div></li>
+    <li><a href="#svetki" style="color:var(--red)" data-en="Christmas" data-ru="Рождество">Ziemassvētki</a></li>
+    <li><a href="#vakars" data-en="Menu" data-ru="Меню">Ēdienkarte</a></li>
+    <li><a href="#azija" data-en="Asian cuisine" data-ru="Азиатская кухня">Āzijas virtuve</a></li>
+    <li><a href="#brokastis" data-en="Breakfast" data-ru="Завтраки">Brokastis</a></li>
+    <li><a href="#laiks" data-en="Opening hours" data-ru="Часы работы">Darba laiks</a></li>
+    <li><a href="#atsauksmes" data-en="Reviews" data-ru="Отзывы">Atsauksmes</a></li>
+    <li><a href="#darbs" data-en="Jobs" data-ru="Работа">Darbs</a></li>
+    
+  </ul>
+  <div class="langs langs-desktop">
+    <button type="button" data-lang="lv" class="active">LV</button>
+    <button type="button" data-lang="ru">RU</button>
+    <button type="button" data-lang="en">EN</button>
+  </div>
+  <a href="tel:+37122337221" class="nav-cta">+371 22 337 221</a>
+  <button class="nav-burger" type="button" aria-label="Izvēlne" aria-expanded="false" data-burger>
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<section class="hero">
+  <div class="hero-left">
+    <p class="eyebrow" data-en="Āgenskalns, Riga · since 2011" data-ru="Агенскалнс, Рига · с 2011 года">Āgenskalns, Rīga · kopš 2011</p>
+    <h1 class="hero-title" data-html data-en="Dinner<br>with a <em>master's</em><br>precision" data-ru="Ужин<br>с <em>точностью</em><br>мастера">Vakariņas<br>ar <em>meistara</em><br>precizitāti</h1>
+    <p class="hero-tagline" data-en="Where true craftsmanship creates bold flavour." data-ru="Где настоящее мастерство рождает смелый вкус.">Kur īsta meistarība rada drosmīgu garšu.</p>
+    <p class="hero-sub" data-html data-en="Modern Latvian cuisine with vivid Asian accents. <strong>Tom Yum, steaks, seabass fillet, the Breslin burger</strong> — unhurried evenings, cooked to order since 2011." data-ru="Современная латышская кухня с яркими азиатскими акцентами. <strong>Том Ям, стейки, филе каменного окуня, бургер Breslin</strong> — неспешные вечера, готовим на заказ с 2011 года.">
+      Mūsdienīga latviešu virtuve ar spilgtiem Āzijas akcentiem. <strong>Tom Yum, steiki, akmeņasara fileja, Breslin burgers</strong> — nesteidzīgi vakari, gatavoti uz vietas kopš 2011.
+    </p>
+    <div class="btn-row">
+      <a href="#" class="btn-dark" data-reserve data-en="Book a table" data-ru="Забронировать столик">Rezervēt galdiņu</a>
+      <a href="#vakars" class="btn-outline" data-en="Evening menu →" data-ru="Вечернее меню →">Vakara ēdienkarte →</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-deco"></div>
+    <div class="hero-deco2"></div>
+    <div class="hero-badge">
+      <div class="badge-ring">
+        <div class="badge-inner">
+          <span class="badge-num">15+</span>
+          <span class="badge-label" data-en="years" data-ru="лет">gadi</span>
+        </div>
+      </div>
+      <p class="hero-visual-text" data-en="Asian flavours in Riga" data-ru="Азиатский вкус в Риге">Āzijas garša Rīgā</p>
+    </div>
+  </div>
+</section>
+
+<div class="strip">
+  <div class="strip-item">
+    <div class="strip-num">18:00</div>
+    <div class="strip-label" data-en="Dinner à la carte" data-ru="Ужин à la carte">Vakariņas à la carte</div>
+  </div>
+  <div class="strip-item">
+    <div class="strip-num">10–21</div>
+    <div class="strip-label" data-en="Breakfast all day" data-ru="Завтраки весь день">Brokastis visu dienu</div>
+  </div>
+  <div class="strip-item">
+    <div class="strip-num">15+</div>
+    <div class="strip-label" data-en="Years of craft" data-ru="Лет мастерства">Gadi meistarībā</div>
+  </div>
+  <div class="strip-item">
+    <div class="strip-num">100%</div>
+    <div class="strip-label" data-en="Homemade" data-ru="Готовим сами">Pašu gatavots</div>
+  </div>
+</div>
+
+
+<!-- ===== ZIEMASSVĒTKI CEPIENĀ (pievienots 2026-11) ===== -->
+<section class="section xmas" id="svetki">
+  <div class="sec-head">
+    <p class="sec-eyebrow" data-en="Christmas at Cepiens" data-ru="Рождество в Cepiens">Ziemassvētki Cepienā</p>
+    <h2 class="sec-title" data-html data-en="A festive table,&lt;br&gt;like at &lt;em&gt;friends’&lt;/em&gt; home" data-ru="Праздничный стол,&lt;br&gt;как в гостях у &lt;em&gt;друзей&lt;/em&gt;">Svētku galds<br>kā mājās pie <em>draugiem</em></h2>
+  </div>
+  <div class="xm-grid">
+    <div class="xm-card">
+      <p class="menu-tag" data-en="For companies" data-ru="Для компаний">Kompānijām</p>
+      <h3 class="xm-t" data-en="Festive dinners for teams" data-ru="Праздничные ужины для коллективов">Svētku vakariņas kolektīvam</h3>
+      <p class="xm-d" data-en="Up to 50 guests and the whole place is yours. We agree the menu in advance, so on the night nobody waits. Uldis in the kitchen, Denize on the floor." data-ru="До 50 гостей — и весь зал только ваш. Меню согласуем заранее, чтобы вечером никто не ждал. Улдис на кухне, Денизе в зале.">Līdz 50 viesiem, un visa vieta ir tikai jūsu. Ēdienkarti saskaņojam iepriekš, tāpēc vakarā neviens negaida. Uldis virtuvē, Denize zālē.</p>
+      <p class="xm-n" data-en="December Fridays fill up first — send us the date and number of guests." data-ru="Пятницы декабря заполняются первыми — напишите дату и число гостей.">Decembra piektdienas aizpildās pirmās — atsūti datumu un viesu skaitu.</p>
+    </div>
+    <div class="xm-card">
+      <p class="menu-tag" data-en="Gift card" data-ru="Подарочная карта">Dāvanu karte</p>
+      <h3 class="xm-t" data-en="A gift no one returns to the shop" data-ru="Подарок, который не вернут в магазин">Dāvana, ko neviens neatdod atpakaļ veikalā</h3>
+      <p class="xm-d" data-en="Chef’s table for two: four courses €118, with wine pairing €166. Or any amount for breakfast, lunch or dinner. Every card is wrapped by hand." data-ru="Стол мастера на двоих: четыре подачи €118, с винным сопровождением €166. Или любая сумма — на завтрак, обед или ужин. Каждую карту упаковываем вручную.">Meistara galds divatā: četri kursi €118, ar vīna pieskaņu €166. Vai summa pēc izvēles brokastīm, pusdienām vai vakariņām. Katru karti iesaiņojam ar roku.</p>
+      <p class="xm-n" data-en="Order by DM or pick one up at Meža iela 4A." data-ru="Заказ в DM или на месте, Межа 4А.">Pasūti DM vai paņem uz vietas Meža ielā 4A.</p>
+    </div>
+    <div class="xm-card">
+      <p class="menu-tag" data-en="To take away" data-ru="С собой">Līdzņemšanai</p>
+      <h3 class="xm-t" data-en="Crostini plate" data-ru="Crostini plate">Crostini plate</h3>
+      <p class="xm-d" data-en="A party at home or a birthday at the office without standing in the kitchen. We prepare the platter for your celebration — you just pick it up." data-ru="Вечеринка дома или день рождения в офисе — без стояния на кухне. Мы готовим тарелку для вашего праздника, вам остаётся только забрать.">Ballīte mājās vai dzimšanas diena birojā bez stāvēšanas virtuvē. Mēs sagatavojam plati tavām svinībām, tev atliek tikai paņemt.</p>
+      <p class="xm-n" data-en="Prices and orders — message us on Instagram." data-ru="Цены и заказы — пишите в Instagram.">Cenu un pasūtījumus — raksti mums Instagram.</p>
+    </div>
+  </div>
+  <div class="xm-bottom">
+    <div class="xm-reel">
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DfSLJ0Coml3/" data-instgrm-version="14" style="background:#fff;border:0;margin:0 auto;max-width:400px;min-width:280px;width:100%"><a href="https://www.instagram.com/reel/DfSLJ0Coml3/" target="_blank" rel="noopener">Skaties crostini video Instagram →</a></blockquote>
+    </div>
+    <div class="xm-cta">
+      <p class="xm-hours" data-en="Holiday opening hours will be announced on our Instagram." data-ru="Часы работы в праздники объявим в Instagram.">Svētku dienu darba laiku paziņosim mūsu Instagram.</p>
+      <div class="cta-row">
+        <a href="https://ig.me/m/cepiens" target="_blank" rel="noopener" class="btn-dark" data-en="Message us" data-ru="Написать нам">Rakstīt mums DM</a>
+        <a href="tel:+37122337221" class="cta-link">+371 22 337 221</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== VAKARS / À LA CARTE — pirmā ēdienu sadaļa lapā ===== -->
+<section class="section" id="vakars">
+  <div class="sec-head">
+    <p class="sec-eyebrow" data-en="Evening · à la carte" data-ru="Вечер · à la carte">Vakars · à la carte</p>
+    <h2 class="sec-title" data-html data-en="Unhurried dining,<br><em>master's</em> precision" data-ru="Неспешный ужин,<br>точность <em>мастера</em>">Nesteidzīga maltīte,<br><em>meistara</em> precizitāte</h2>
+  </div>
+  <div class="ml"><div class="ml-lunch"><div><p class="ml-lunch-k" data-en="Weekday lunch" data-ru="Обеды в будни">Darbdienu pusdienas</p><p class="ml-lunch-t" data-en="Soup + main from the menu · 12:00–16:00 · €14.90" data-ru="Суп + основное блюдо из меню · 12:00–16:00 · €14.90">Zupa + pamatēdiens no ēdienkartes · 12:00–16:00 · €14.90</p></div><div><p class="ml-lunch-k" data-en="At the counter" data-ru="У прилавка">Pie letes</p><p class="ml-lunch-t" data-en="Daily lunch from €5 · 10:00–18:00" data-ru="Обеды каждый день от €5 · 10:00–18:00">Pusdienas katru dienu no €5 · 10:00–18:00</p></div><div><p class="ml-lunch-k" data-en="Add" data-ru="Добавьте">Pievieno</p><p class="ml-lunch-t" data-en="A glass of house wine €7 · dessert + coffee €10" data-ru="Бокал домашнего вина €7 · десерт + кофе €10">Glāze mājas vīna €7 · deserts + kafija €10</p></div></div><div class="ml-cols"><div><div class="ml-cat"><h3 class="ml-h" data-en="Starters" data-ru="Закуски">Uzkodas</h3><div class="ml-row"><div class="ml-main"><div class="ml-name"><span data-en="Caramelised beets" data-ru="Карамелизированная свёкла">Karamelizētas bietes</span><sup class="ml-al">7,8,12</sup><span class="ml-tag" data-en="Cepiens classic" data-ru="Классика Cepiens">Cepiena klasika</span></div><div class="ml-desc" data-en="Apple, goat cheese" data-ru="С яблоком и козьим сыром">Ar āboliem un kazas sieru</div></div><div class="ml-price">€10</div></div><div class="ml-row"><div class="ml-main"><div class="ml-name"><span data-en="Wine platter" data-ru="Винная тарелка">Vīna plate</span><sup class="ml-al">1,7,8,12</sup></div><div class="ml-desc" data-en="Charcuterie, cheeses, honey" data-ru="Мясная нарезка, сыры, мёд">Vītinātas gaļas, sieri, medus</div></div><div class="ml-price">€15</div></div><div class="ml-row"><div class="ml-main"><div class="ml-name"><span data-en="Salmon tartare" data-ru="Тартар из лосося">Laša tartare</span><sup class="ml-al">3,4,10,12</sup><span class="ml-tag" data-en="Cepiens classic" data-ru="Классика Cepiens">Cepiena klasika</span></div><div class="ml-desc" data-en="Mustard, shallot, toasted bread" data-ru="С горчицей, луком и гренками">Ar sinepēm, sīpolu un grauzdiņiem</div></div><div class="ml-price">€19</div></div><div class="ml-row"><div class="ml-main"><div class="ml-name"><span data-en="Ceviche" data-ru="Севиче">Ceviche</span><sup class="ml-al">4,7,12</sup></div><div class="ml-desc" data-en="Lime, chili" data-ru="С лаймом и чили">Ar laimu un čili</div></div><div class="ml-price">€17</div></div><div class="ml-row"><div class="ml-main"><div class="ml-name"><span data-en="Garlic bread" data-ru="Чесночные гренки">Ķiploku grauzdiņi</span><sup class="ml-al">1,7</sup><span class="ml-tag" data-en="Cepiens classic" data-ru="Классика Cepiens">Cepiena klasika</span></div><div class="ml-desc" data-en="Our classic with any dish" data-ru="Наша классика к любому блюду">Mūsu klasika pie jebkura ēdiena</div></div><div class="ml-price">€5</div></div></div><div class="ml-cat"><h3 class="ml-h" data-en="Soup" data-ru="Суп">Zupa</h3><div class="ml-row"><div class="ml-main"><div class="ml-name"><span data-en="Clear fish soup" data-ru="Прозрачный рыбный суп">Dzidrā zivju zupa</span><sup class="ml-al">4,7</sup></div><div class="ml-desc" data-en="Perch fillets, herb oil, smoked cream" data-ru="Филе окуня, масло зелени, копчёные сливки">Asara filejas, zaļumu eļļa, kūpināts krējums</div></div><div class="ml-price">€12</div></div></div></div><div><div class="ml-cat"><h3 class="ml-h" data-en="Mains" data-ru="Основные блюда">Pamatēdieni</h3><div class="ml-row"><div class="ml-main"><div class="ml-name"><span data-en="Pork steak" data-ru="Свиной стейк">Cūkas steiks</span><sup class="ml-al">7,9,10</sup></div><div class="ml-desc" data-en="Mustard sauce" data-ru="С горчичным соусом">Ar sinepju mērci</div></div><div class="ml-price">€15</div></div><div class="ml-row"><div class="ml-main"><div class="ml-name"><span data-en="Duck confit" data-ru="Утка конфи">Pīles confit</span><sup class="ml-al">1,7</sup></div><div class="ml-desc" data-en="Slow-cooked duck, cabbage, pear" data-ru="Томлёная утка, капуста, груша">Lēni gatavota pīle, kāposti, bumbieris</div></div><div class="ml-price">€16</div></div><div class="ml-row"><div class="ml-main"><div class="ml-name"><span data-en="Moules marinières" data-ru="Мидии мариньер">Moules marinières</span><sup class="ml-al">7,9,12,14</sup><span class="ml-tag" data-en="Cepiens classic" data-ru="Классика Cepiens">Cepiena klasika</span></div><div class="ml-desc" data-en="Mussels, white wine, shallots, cream" data-ru="Мидии, белое вино, шалот, сливки">Mīdijas, baltvīns, šalotes sīpoli, krējums</div></div><div class="ml-price">€17</div></div><div class="ml-row"><div class="ml-main"><div class="ml-name"><span data-en="Seabass" data-ru="Сибас">Akmeņasaris</span><sup class="ml-al">1,4,7,12</sup><span class="ml-tag" data-en="Cepiens classic" data-ru="Классика Cepiens">Cepiena klasika</span></div><div class="ml-desc" data-en="Butter, capers" data-ru="Со сливочным маслом и каперсами">Ar sviestu un kaprēm</div></div><div class="ml-price">€19</div></div><div class="ml-row"><div class="ml-main"><div class="ml-name"><span data-en="Duck breast" data-ru="Утиная грудка">Pīles krūtiņa</span><sup class="ml-al">7,9</sup></div><div class="ml-desc" data-en="Mulled wine sauce" data-ru="С соусом из глинтвейна">Ar karstvīna mērci</div></div><div class="ml-price">€19</div></div><div class="ml-row"><div class="ml-main"><div class="ml-name"><span data-en="Lamb shank" data-ru="Баранья голяшка">Jēra stilbs</span><sup class="ml-al">1,7,9</sup></div><div class="ml-desc" data-en="Slow-braised, autumn herbs" data-ru="Томлёная, с осенними травами">Lēni cepts, rudens garšaugi</div></div><div class="ml-price">€22</div></div><div class="ml-row"><div class="ml-main"><div class="ml-name"><span data-en="Ribeye" data-ru="Рибай">Ribeye</span><sup class="ml-al">7,9</sup></div><div class="ml-desc" data-en="Beef steak, black pepper sauce" data-ru="Говяжий стейк, соус из чёрного перца">Liellopa steiks, melno piparu mērce</div></div><div class="ml-price">€30</div></div><div class="ml-row"><div class="ml-main"><div class="ml-name"><span data-en="Tuna steak" data-ru="Стейк из тунца">Tunča steiks</span><sup class="ml-al">4,6,7,11</sup></div><div class="ml-desc" data-en="Pear, red wine, soy" data-ru="С грушей, красным вином и соевым соусом">Ar bumbieri, sarkano vīnu un sojas mērci</div></div><div class="ml-price">€30</div></div><div class="ml-row"><div class="ml-main"><div class="ml-name"><span data-en="Chef’s special" data-ru="Блюдо от шефа">Šefpavāra īpašais</span></div><div class="ml-desc" data-en="Daily, market-fresh — ask our staff" data-ru="Каждый день с рынка — спросите персонал">Katru dienu no tirgus — jautā personālam</div></div><div class="ml-price">—</div></div></div></div><div><div class="ml-cat"><h3 class="ml-h" data-en="Hearty" data-ru="Сытные блюда">Sātīgie</h3><div class="ml-row"><div class="ml-main"><div class="ml-name"><span data-en="Breslin burger" data-ru="Бургер Breslin">Breslin burgers</span><sup class="ml-al">1,3,7,10</sup><span class="ml-tag" data-en="Cepiens classic" data-ru="Классика Cepiens">Cepiena klasika</span></div><div class="ml-desc" data-en="Aged cheddar, brioche" data-ru="Выдержанный чеддер, бриошь">Nogatavināts čedars, briošs</div></div><div class="ml-price">€16</div></div><div class="ml-row"><div class="ml-main"><div class="ml-name"><span data-en="Pita burger" data-ru="Бургер в пите">Pitas burgers</span><sup class="ml-al">1,3,7,10</sup></div><div class="ml-desc" data-en="Beef, pita, pico de gallo, sambal mayo" data-ru="Говядина, пита, пико де гайо, майонез самбал">Liellops, pita, pico de gallo, sambal majonēze</div></div><div class="ml-price">€16</div></div><div class="ml-row"><div class="ml-main"><div class="ml-name"><span data-en="Fish and chips" data-ru="Фиш-энд-чипс">Fish and chips</span><sup class="ml-al">1,3,4,7</sup></div><div class="ml-desc" data-en="Battered fish, tartare sauce" data-ru="Рыба в кляре, соус тартар">Mīklā cepta zivs, tartāra mērce</div></div><div class="ml-price">€16</div></div><div class="ml-row"><div class="ml-main"><div class="ml-name"><span data-en="Chicken Kiev" data-ru="Котлета по-киевски">Chicken Kiev</span><sup class="ml-al">1,3,7</sup></div><div class="ml-desc" data-en="Baby gem, Caesar dressing" data-ru="С мини-ромэном и соусом Цезарь">Ar mini romiešu salātiem un Cēzara mērci</div></div><div class="ml-price">€16</div></div></div></div></div><p class="ml-legend" data-en="Allergens: 1 gluten · 2 crustaceans · 3 eggs · 4 fish · 5 peanuts · 6 soy · 7 milk · 8 nuts · 9 celery · 10 mustard · 11 sesame · 12 sulphites · 13 lupin · 14 molluscs" data-ru="Аллергены: 1 глютен · 2 ракообразные · 3 яйца · 4 рыба · 5 арахис · 6 соя · 7 молоко · 8 орехи · 9 сельдерей · 10 горчица · 11 кунжут · 12 сульфиты · 13 люпин · 14 моллюски">Alergēni: 1 glutēns · 2 vēžveidīgie · 3 olas · 4 zivis · 5 zemesrieksti · 6 soja · 7 piens · 8 rieksti · 9 selerijas · 10 sinepes · 11 sezams · 12 sulfīti · 13 lupīnas · 14 moluski</p></div>
+  <div class="feature-box" style="margin-top:2.2rem">
+    <div class="fb-text">
+      <p class="menu-tag" style="margin-bottom:.5rem" data-en="Chef's table for two" data-ru="Стол мастера на двоих">Meistara galds diviem</p>
+      <p class="fb-title" data-en="An evening tale in four courses — €118 for two, €166 with wine pairing." data-ru="Вечерняя история в четырёх подачах — €118 на двоих, €166 с винным сопровождением.">Vakara stāsts četrās kārtās — €118 diviem, €166 ar vīna saskaņojumu.</p>
+    </div>
+    <a href="#" class="btn-dark" data-reserve data-en="Book a table" data-ru="Забронировать столик">Rezervēt galdiņu</a>
+  </div>
+
+  <!-- ===== JAUNUMI ĒDIENKARTĒ — te pievieno/noņem jaunos ēdienus ===== -->
+  <div class="news-box">
+    <p class="sec-eyebrow" style="margin-bottom:1.2rem" data-en="New on the menu" data-ru="Новинки меню">Jaunumi ēdienkartē</p>
+    <div class="news-grid">
+      <div>
+        <div class="menu-name" style="margin-bottom:.35rem" data-en="Pad Thai" data-ru="Пад Тай">Pad Thai</div>
+        <div class="menu-desc" data-en="Rice noodles, tamarind, peanuts, lime — with chicken, or chicken and prawns." data-ru="Рисовая лапша, тамаринд, арахис, лайм — с курицей или с курицей и креветками.">Rīsu nūdeles, tamarinds, zemesrieksti, laims — ar vistu vai ar vistu un garnelēm.</div>
+        <div class="menu-price">€14 / €21</div>
+      </div>
+      <div>
+        <div class="menu-name" style="margin-bottom:.35rem" data-en="Clear fish soup" data-ru="Прозрачный рыбный суп">Dzidra zivju zupa</div>
+        <div class="menu-desc" data-en="Clear broth, nothing to hide behind — a soup that shows the craft." data-ru="Прозрачный бульон, за которым нечего спрятать — суп, показывающий мастерство.">Dzidrs buljons, aiz kura nav kur paslēpties — zupa, kas parāda meistarību.</div>
+        <div class="menu-price">€12</div>
+      </div>
+      <div>
+        <div class="menu-name" style="margin-bottom:.35rem" data-en="Floating islands" data-ru="Плавающие острова">Peldošās salas</div>
+        <div class="menu-desc" data-en="Airy meringue on vanilla cream — a classic dessert, made by hand." data-ru="Воздушное безе на ванильном креме — классический десерт, сделанный вручную.">Gaisīga bezē uz vaniļas krēma — klasisks deserts, gatavots ar rokām.</div>
+      </div>
+      <div>
+        <div class="menu-name" style="margin-bottom:.35rem">Tiramisu</div>
+        <div class="menu-desc" data-en="Our own version — coffee, mascarpone, nothing extra." data-ru="Наша версия — кофе, маскарпоне, ничего лишнего.">Mūsu pašu versija — kafija, mascarpone, nekā lieka.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="azija" style="padding-top:0">
+  <div class="sec-head">
+    <p class="sec-eyebrow" data-en="Asian cuisine · the original since 2011" data-ru="Азиатская кухня · оригинал с 2011 года">Āzijas virtuve · oriģināls kopš 2011</p>
+    <h2 class="sec-title" data-html data-en="While others <em>copied,</em><br>we were already cooking" data-ru="Пока другие <em>копировали,</em><br>мы уже готовили">Kamēr pārējie <em>kopēja,</em><br>mēs jau gatavojām</h2>
+  </div>
+  <div class="ml"><div class="ml-cols ml-cols2"><div><div class="ml-cat"><h3 class="ml-h" data-en="Soups" data-ru="Супы">Zupas</h3><div class="ml-row"><div class="ml-main"><div class="ml-name"><span data-en="Tom Yum with chicken" data-ru="Том Ям с курицей">Tom Yum ar vistu</span><sup class="ml-al">1,4,6</sup></div><div class="ml-desc" data-en="Hot &amp; sour, Thai herbs" data-ru="Острый кисло-пряный суп, тайские травы">Asā skābā zupa, taizemes garšaugi</div></div><div class="ml-price">€9</div></div><div class="ml-row"><div class="ml-main"><div class="ml-name"><span data-en="Tom Yum with chicken &amp; prawns" data-ru="Том Ям с курицей и креветками">Tom Yum ar vistu un garnelēm</span><sup class="ml-al">1,2,4,6</sup></div><div class="ml-desc" data-en="Hot &amp; sour, Thai herbs" data-ru="Острый кисло-пряный суп, тайские травы">Asā skābā zupa, taizemes garšaugi</div></div><div class="ml-price">€16</div></div><div class="ml-row"><div class="ml-main"><div class="ml-name"><span data-en="Tom Kha" data-ru="Том Кха">Tom Kha</span><sup class="ml-al">1,2,6,7,8</sup></div><div class="ml-desc" data-en="Coconut, prawns, lemongrass" data-ru="Кокосовое молоко, креветки, лемонграсс">Kokosriekstu piens, garneles, citronzāle</div></div><div class="ml-price">€10</div></div><div class="ml-row"><div class="ml-main"><div class="ml-name"><span data-en="Ramen — chicken or pork" data-ru="Рамен с курицей или свининой">Ramen ar vistu vai cūkgaļu</span><sup class="ml-al">1,3,6,7</sup></div><div class="ml-desc" data-en="Each kind has its own broth, simmered 8 hours" data-ru="У каждого вида свой бульон, 8 часов на огне">Katram veidam savs buljons, kas vārās 8 stundas</div></div><div class="ml-price">€12</div></div><div class="ml-row"><div class="ml-main"><div class="ml-name"><span data-en="Seafood ramen" data-ru="Рамен с морепродуктами">Ramen ar jūras veltēm</span><sup class="ml-al">1,2,3,4,6,7,14</sup></div><div class="ml-desc" data-en="Only 10 portions a day" data-ru="Только 10 порций в день">Tikai 10 porcijas dienā</div></div><div class="ml-price">€15</div></div></div></div><div><div class="ml-cat"><h3 class="ml-h" data-en="Dishes" data-ru="Блюда">Ēdieni</h3><div class="ml-row"><div class="ml-main"><div class="ml-name"><span data-en="Chicken yakitori" data-ru="Якитори с курицей">Yakitori ar vistu</span><sup class="ml-al">6,11</sup></div><div class="ml-desc" data-en="Chicken skewers, tare glaze" data-ru="Куриные шашлычки, глазурь тарэ">Vistas iesmiņi, tare glazūra</div></div><div class="ml-price">€12</div></div><div class="ml-row"><div class="ml-main"><div class="ml-name"><span data-en="Pad Thai with chicken" data-ru="Пад Тай с курицей">Pad Thai ar vistu</span><sup class="ml-al">1,3,4,5,6</sup><span class="ml-tag" data-en="New" data-ru="Новинка">Jaunums</span></div><div class="ml-desc" data-en="Rice noodles, tamarind, peanuts, lime" data-ru="Рисовая лапша, тамаринд, арахис, лайм">Rīsu nūdeles, tamarinds, zemesrieksti, laims</div></div><div class="ml-price">€14</div></div><div class="ml-row"><div class="ml-main"><div class="ml-name"><span data-en="Pad Thai with chicken &amp; prawns" data-ru="Пад Тай с курицей и креветками">Pad Thai ar vistu un garnelēm</span><sup class="ml-al">1,2,3,4,5,6</sup><span class="ml-tag" data-en="New" data-ru="Новинка">Jaunums</span></div><div class="ml-desc" data-en="Rice noodles, tamarind, peanuts, lime" data-ru="Рисовая лапша, тамаринд, арахис, лайм">Rīsu nūdeles, tamarinds, zemesrieksti, laims</div></div><div class="ml-price">€21</div></div><div class="ml-row"><div class="ml-main"><div class="ml-name"><span data-en="Bibimbap" data-ru="Пибимпап">Bibimbap</span><sup class="ml-al">1,6,7,8,11</sup></div><div class="ml-desc" data-en="Beef or prawns, egg, gochujang" data-ru="Говядина или креветки, яйцо, кочхуджан">Liellops vai garneles, ola, gochujang</div></div><div class="ml-price">€16</div></div><div class="ml-row"><div class="ml-main"><div class="ml-name"><span data-en="Prawn curry" data-ru="Карри с креветками">Karijs ar garnelēm</span><sup class="ml-al">2,6,7,8,11</sup></div><div class="ml-desc" data-en="With coconut rice" data-ru="С кокосовым рисом">Ar kokosriekstu rīsiem</div></div><div class="ml-price">€21</div></div><div class="ml-row"><div class="ml-main"><div class="ml-name"><span data-en="Chicken wok" data-ru="Вок с курицей">Wok ar vistu</span><sup class="ml-al">1,6,11</sup><span class="ml-tag" data-en="Cepiens classic" data-ru="Классика Cepiens">Cepiena klasika</span></div><div class="ml-desc" data-en="Chicken, soy, sesame" data-ru="Курица, соя, кунжут">Vista, soja, sezams</div></div><div class="ml-price">€9</div></div></div></div></div><p class="ml-legend" data-en="Allergens: 1 gluten · 2 crustaceans · 3 eggs · 4 fish · 5 peanuts · 6 soy · 7 milk · 8 nuts · 9 celery · 10 mustard · 11 sesame · 12 sulphites · 13 lupin · 14 molluscs" data-ru="Аллергены: 1 глютен · 2 ракообразные · 3 яйца · 4 рыба · 5 арахис · 6 соя · 7 молоко · 8 орехи · 9 сельдерей · 10 горчица · 11 кунжут · 12 сульфиты · 13 люпин · 14 моллюски">Alergēni: 1 glutēns · 2 vēžveidīgie · 3 olas · 4 zivis · 5 zemesrieksti · 6 soja · 7 piens · 8 rieksti · 9 selerijas · 10 sinepes · 11 sezams · 12 sulfīti · 13 lupīnas · 14 moluski</p></div>
+</section>
+
+<section class="section" id="brokastis" style="padding-top:0">
+  <div class="sec-head">
+    <p class="sec-eyebrow" data-en="Breakfast · 10:00 – 21:00" data-ru="Завтраки · 10:00 – 21:00">Brokastis · 10:00 – 21:00</p>
+    <h2 class="sec-title" data-html data-en="Mornings start <em>deliciously</em>" data-ru="Утро начинается <em>вкусно</em>">Rīts sākas <em>garšīgi</em></h2>
+  </div>
+
+  <!-- Brokastu flagmanis -->
+  <div class="feature-box" style="margin-bottom:1.5rem">
+    <div class="fb-text">
+      <p class="menu-tag" style="margin-bottom:.5rem" data-en="Our flagship" data-ru="Наш флагман">Mūsu flagmanis</p>
+      <p class="fb-title" data-en="Eggs Benedict with salmon" data-ru="Яйца Бенедикт с лососем">Benedikts ar lasi</p>
+      <p class="menu-desc" style="margin-bottom:0" data-en="Poached eggs, salmon and hollandaise made to order — the breakfast our guests name in their reviews. Served until 21:00." data-ru="Яйца пашот, лосось и голландский соус, приготовленные на заказ — завтрак, который гости называют в отзывах. Подаём до 21:00.">Šķidri vārītas olas, lasis un uz vietas gatavota holandiešu mērce — brokastis, ko viesi min atsauksmēs. Pasniedzam līdz 21:00.</p>
+    </div>
+    <div class="fb-price">€19</div>
+  </div>
+
+  <div class="menu-grid">
+    <div class="menu-card">
+      <div class="menu-tag" data-en="Classic" data-ru="Классика">Klasika</div>
+      <div class="menu-name" data-en="Thin pancakes" data-ru="Тонкие блинчики">Plānas pankūkas</div>
+      <div class="menu-desc" data-en="With strawberry jam. Thin and delicate — a homemade treat that keeps you coming back." data-ru="С клубничным вареньем. Тонкие, нежные — домашнее лакомство, за которым возвращаются.">Ar zemeņu ievārījumu. Plānas, smalkas — pašu gatavots sapenis, kas liek atgriezties.</div>
+      <div class="menu-price">€8</div>
+    </div>
+    <div class="menu-card">
+      <div class="menu-tag" data-en="Family recipe" data-ru="Домашний рецепт">Mājas recepte</div>
+      <div class="menu-name" data-en="Cottage cheese pancakes" data-ru="Сырники">Biezpiena plācenīši</div>
+      <div class="menu-desc" data-en="With jam — soft and juicy, made from fresh cottage cheese. The kind you won't find anywhere else." data-ru="С вареньем — нежные, сочные, из свежего творога. Таких больше нигде не найдёте.">Ar ievārījumu — maigi, sulīgi, no svaiga biezpiena. Tādi, kādus vairs citur neredzēsi.</div>
+      <div class="menu-price">€8</div>
+    </div>
+    <div class="menu-card">
+      <div class="menu-tag" data-en="Warm start" data-ru="Тёплое начало">Silts sākums</div>
+      <div class="menu-name" data-en="Potato pancakes" data-ru="Драники">Kartupeļu pankūkas</div>
+      <div class="menu-desc" data-en="With sour cream, fried golden. Simple and unforgettable — just like at grandma's." data-ru="Со сметаной, обжаренные до золотистого. Просто и незабываемо — как у бабушки.">Ar skābo krējumu, ceptas zeltainas. Vienkārši un neaizmirstami — kā pie vecvecākiem.</div>
+      <div class="menu-price">€8</div>
+    </div>
+  </div>
+</section>
+
+<div class="heritage">
+  <div class="heritage-dark">
+    <p class="heritage-tag" data-en="Our philosophy" data-ru="Наша философия">Mūsu filozofija</p>
+    <p class="heritage-quote" data-en="&quot;Where true craftsmanship creates bold flavour.&quot;" data-ru="«Где настоящее мастерство рождает смелый вкус.»">"Kur īsta meistarība rada drosmīgu garšu."</p>
+    <p class="heritage-body" data-en="Riga has plenty of places serving what passes for Asian cuisine today. We were already doing it back in 2011. 15+ years isn't just a number — it's hundreds of recipe variations, thousands of happy guests and one unchanging goal." data-ru="В Риге много мест, где сегодня готовят «как бы» азиатскую кухню. Мы делали это уже с 2011 года. 15+ лет — не просто цифра: это сотни вариаций рецептов, тысячи довольных гостей и одна неизменная цель.">
+      Rīgā ir daudz vietu, kas šodien gatavo it kā Āzijas virtuvi. Mēs to jau darījām no 2011. gada. 15+ gadi nav tikai skaitlis — tie ir simtiem recepšu variāciju, tūkstošiem apmierinātu viesu un viens nemainīgs mērķis.
+    </p>
+    <p class="heritage-tag">@cepiens · Āgenskalns</p>
+  </div>
+  <div class="heritage-light">
+    <p class="sec-eyebrow" data-en="Why guests come back" data-ru="Почему к нам возвращаются">Kāpēc pie mums atgriežas</p>
+    <h3 style="font-family:var(--serif);font-size:1.7rem;font-weight:400;margin-bottom:1.5rem;line-height:1.2"><span data-en="The real" data-ru="Настоящая">Īstais</span> <em style="font-style:italic;color:var(--red)" data-en="reason" data-ru="причина">iemesls</em> <span data-en="to return" data-ru="вернуться">atgriezties</span></h3>
+    <ul class="heritage-list">
+      <li data-en="Full à la carte dinners — steaks, fish, wine" data-ru="Полноценные ужины à la carte — стейки, рыба, вино">Pilnvērtīgas à la carte vakariņas — steiki, zivs, vīns</li>
+      <li data-en="Tom Yum, Tom Kha, curry — cooked authentically" data-ru="Том Ям, Том Кха, карри — готовим аутентично">Tom Yum, Tom Kha, karijs — gatavots autentiski</li>
+      <li data-en="Chef's table for two — €118, four courses" data-ru="Стол мастера на двоих — €118, четыре подачи">Meistara galds diviem — €118 četrās kārtās</li>
+      <li data-en="Modern Latvian cuisine with Asian accents" data-ru="Современная латышская кухня с азиатскими акцентами">Mūsdienīga latviešu virtuve ar Āzijas akcentiem</li>
+      <li data-en="Breakfast all day — from 10:00 to 21:00" data-ru="Завтраки весь день — с 10:00 до 21:00">Brokastis visu dienu — no 10:00 līdz 21:00</li>
+      <li data-en="Lunch offer from €5" data-ru="Обеденное предложение от €5">Pusdienu piedāvājums no €5</li>
+      <li data-en="Animals — 2 corgis, 1 former street dog and 3 cats" data-ru="Животные — 2 корги, 1 бывший уличный пёс и 3 кота">Dzīvnieki — 2 korgiji, 1 bijušais ielas suns un 3 kaķi</li>
+    </ul>
+  </div>
+</div>
+
+<section class="hours-section" id="laiks">
+  <div class="sec-head" style="margin-bottom:0">
+    <p class="sec-eyebrow" data-en="Opening hours" data-ru="Часы работы">Darba laiks</p>
+    <h2 class="sec-title" data-html data-en="We are <em>open</em>" data-ru="Мы <em>открыты</em>">Mēs esam <em>atvērti</em></h2>
+  </div>
+  <div class="hours-grid">
+    <div class="hours-col">
+      <div class="hours-day" data-en="Monday – Thursday" data-ru="Понедельник – четверг">Pirmdiena – ceturtdiena</div>
+      <div class="hours-time">10:00 – 21:00</div>
+      <div class="hours-note" data-en="Full à la carte menu &amp; breakfast all day · lunch at the counter from €5 (10:00–18:00) · weekday lunch set €14.90 (12:00–16:00)" data-ru="Полное меню à la carte и завтраки весь день · обеды у прилавка от €5 (10:00–18:00) · в будни обед из меню €14.90 (12:00–16:00)">Pilna à la carte ēdienkarte & brokastis visu dienu · pusdienas pie letes no €5 (10:00–18:00) · darbdienās pusdienu komplekts €14.90 (12:00–16:00)</div>
+    </div>
+    <div class="hours-col">
+      <div class="hours-day" data-en="Friday – Saturday" data-ru="Пятница – суббота">Piektdiena – sestdiena</div>
+      <div class="hours-time">10:00 – 21:00</div>
+      <div class="hours-note" data-en="Full à la carte menu &amp; breakfast all day · lunch at the counter from €5 (10:00–18:00) · weekday lunch set €14.90 (12:00–16:00)" data-ru="Полное меню à la carte и завтраки весь день · обеды у прилавка от €5 (10:00–18:00) · в будни обед из меню €14.90 (12:00–16:00)">Pilna à la carte ēdienkarte & brokastis visu dienu · pusdienas pie letes no €5 (10:00–18:00) · darbdienās pusdienu komplekts €14.90 (12:00–16:00)</div>
+    </div>
+    <div class="hours-col">
+      <div class="hours-day" data-en="Sunday" data-ru="Воскресенье">Svētdiena</div>
+      <div class="hours-time" style="color:var(--red)" data-en="Day off" data-ru="Выходной">Brīvdiena</div>
+      <div class="hours-note"><span data-en="On Sundays we rest — we need a day of our own too." data-ru="По воскресеньям мы отдыхаем — нам тоже нужен свой день.">Svētdienās atpūšamies — arī mums vajag savu dienu.</span> <a href="https://www.instagram.com/p/Dac8FYbjWiD/" target="_blank" rel="noopener" style="color:var(--red);border-bottom:1px solid var(--ink30)" data-en="Why? We explain on Instagram →" data-ru="Почему? Рассказываем в Instagram →">Kāpēc? Stāstām Instagram →</a></div>
+    </div>
+  </div>
+
+  <!-- ===== AUGUSTA PIEZĪME (paslēpjas automātiski pēc 31.08.2026) ===== -->
+  <div class="hours-august" id="augustHours">
+    <span class="ha-label" data-en="August — a small change" data-ru="Август — небольшое изменение">Augustā — neliela izmaiņa</span>
+    <span data-html
+          data-en="Until <b>30 August</b>, in the evenings from <b>18:00 to 22:00</b> we serve <b>by prior reservation only</b>. During the day everything is as usual — we are waiting for you for lunch at the counter. The last two weekends of August (<b>22–23 and 29–30 August</b>) we are closed and gathering our strength. From September we are with you on Saturdays again."
+          data-ru="До <b>30 августа</b> по вечерам с <b>18:00 до 22:00</b> обслуживаем <b>только по предварительной брони</b>. Днём всё как обычно — ждём вас на обед у стойки. Последние два уик-энда августа (<b>22–23 и 29–30 августа</b>) отдыхаем и набираемся сил. С сентября снова с вами и по субботам.">Līdz <b>30. augustam</b> vakaros no <b>18:00 līdz 22:00</b> apkalpojam <b>tikai ar iepriekšēju rezervāciju</b>. Dienā viss kā parasti — gaidām jūs uz pusdienām pie letes. Augusta pēdējās divas nedēļas nogales (<b>22.–23. un 29.–30. augusts</b>) esam ciet un atgūstam spēkus. No septembra atkal ar jums arī sestdienās.</span>
+  </div>
+</section>
+
+<!-- ===== ATSAUKSMES (no Tableo rezervāciju sistēmas) =====
+     Jaunas atsauksmes: https://app.tableo.com/restaurants/reviews/cepiens-latvia
+     Pievieno jaunu <div class="review-card"> bloku .reviews-grid iekšpusē. -->
+<section class="reviews-section" id="atsauksmes">
+  <div class="sec-head" style="text-align:center;margin-bottom:2.5rem">
+    <p class="sec-eyebrow" data-en="Guest reviews" data-ru="Отзывы гостей">Viesu atsauksmes</p>
+    <h2 class="sec-title" data-html data-en="What <em>our guests</em> say" data-ru="Что говорят <em>наши гости</em>">Ko saka <em>mūsu viesi</em></h2>
+  </div>
+  <div class="reviews-wrap">
+    <div class="rev-summary">
+      <div class="rev-score">5.0</div>
+      <div class="rev-stars">★★★★★</div>
+      <p class="rev-count" data-en="Booking reviews" data-ru="Отзывы наших гостей">Rezervāciju atsauksmes</p>
+      <div class="rev-cat"><span data-en="Food" data-ru="Еда">Ēdiens</span><span class="st">★★★★★</span></div>
+      <div class="rev-cat"><span data-en="Service" data-ru="Сервис">Apkalpošana</span><span class="st">★★★★★</span></div>
+      <div class="rev-cat"><span data-en="Ambience" data-ru="Атмосфера">Atmosfēra</span><span class="st">★★★★★</span></div>
+      <div class="rev-cat"><span data-en="Value for money" data-ru="Цена и качество">Cena & vērtība</span><span class="st">★★★★★</span></div>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="st-row">★★★★★</div>
+        <p class="rev-text" data-en="&quot;Perfect service! We'll definitely be back!&quot;" data-ru="«Идеальное обслуживание! Обязательно хочется вернуться!»">"Ideālā apkalpošana! Gribās noteikti atgriezties!"</p>
+        <p class="rev-author">Alīna</p>
+        <p class="rev-date" data-en="July 2026" data-ru="Июль 2026">2026. gada jūlijs</p>
+      </div>
+      <div class="review-card">
+        <div class="st-row">★★★★★</div>
+        <p class="rev-text" data-en="5 stars in every category — food, service, ambience and value." data-ru="5 звёзд во всех категориях — еда, сервис, атмосфера и качество.">5 zvaigznes visās kategorijās — ēdiens, apkalpošana, atmosfēra un vērtība.</p>
+        <p class="rev-author">Edīte Pūce-Zaharāne</p>
+        <p class="rev-date" data-en="July 2026" data-ru="Июль 2026">2026. gada jūlijs</p>
+      </div>
+    </div>
+  </div>
+  <p class="rev-src"><span data-en="Reviews from our" data-ru="Отзывы из нашей">Atsauksmes no mūsu</span> <a href="https://app.tableo.com/restaurants/reviews/cepiens-latvia" target="_blank" rel="noopener" data-en="Tableo booking system" data-ru="системы бронирования Tableo">Tableo rezervāciju sistēmas</a></p>
+
+  <!-- ===== GOOGLE 5★ ATSAUKSMES =====
+       Rādām TIKAI 5 zvaigžņu atsauksmes. Jaunu pievieno kā <div class="g-card"> bloku zemāk.
+       Avots: https://www.google.com/maps/place/Cepiens -->
+  <div class="g-block">
+    <p class="g-head"><span class="g-logo"><b style="color:#4285F4">G</b><b style="color:#EA4335">o</b><b style="color:#FBBC05">o</b><b style="color:#4285F4">g</b><b style="color:#34A853">l</b><b style="color:#EA4335">e</b></span> <span data-en="5-star reviews" data-ru="Отзывы на 5 звёзд">5 zvaigžņu atsauksmes</span></p>
+    <div class="g-grid">
+      <div class="g-card">
+        <div class="g-top"><span class="g-av" style="background:#A0522D">A</span><span><span class="g-name">Agnese Isakoviča</span><span class="g-meta" data-en="Google review" data-ru="Отзыв в Google">Google atsauksme</span></span></div>
+        <div class="g-stars">★★★★★ <span class="g-when" data-en="September 2026" data-ru="Сентябрь 2026">2026. gada septembris</span></div>
+        <p class="g-text" data-en="&quot;Very warm and cosy atmosphere. The bibimbap was filling and just spicy enough to warm up on a rainy day. They describe every dish so deliciously and clearly that we knew right away what we wanted.&quot;" data-ru="«Очень тёплая и уютная атмосфера. Пибимпап сытный и в меру острый — как раз согреться в дождливую погоду. О каждом блюде рассказывают так вкусно и понятно, что мы сразу знали, что заказать.»">"Ļoti silta un mājīga atmosfēra. Bibimbaps sātīgs un tieši ideāli ass lietainam laikam, lai sasildītos. Par katru ēdienu izstāsta tik garšīgi un skaidri, ka jau uzreiz zinājām, ko vēlamies pasūtīt."</p>
+      </div>
+      <div class="g-card">
+        <div class="g-top"><span class="g-av" style="background:#4285F4">A</span><span><span class="g-name">Alexander Troestrup</span><span class="g-meta" data-en="Google review" data-ru="Отзыв в Google">Google atsauksme</span></span></div>
+        <div class="g-stars">★★★★★ <span class="g-when" data-en="September 2026" data-ru="Сентябрь 2026">2026. gada septembris</span></div>
+        <p class="g-text" data-en="&quot;Very good ramen for very reasonable prices. There are cats and dogs who calmly approach you and let you pet them. One of the dogs sat down next to me while I ate — it felt like I had a guard dog companion by my side. A very unique experience.&quot;" data-ru="«Очень хороший рамен по очень разумной цене. Здесь кошки и собаки, которые спокойно подходят и дают себя погладить. Одна собака села рядом, пока я ел, — будто у меня появился свой сторожевой пёс. Очень необычный опыт.»">"Ļoti labs ramens par ļoti saprātīgu cenu. Te ir kaķi un suņi, kas mierīgi pienāk un ļauj sevi paglaudīt. Viens suns apsēdās man blakus, kamēr ēdu, un likās, ka man ir savs sargsuns. Ļoti unikāla pieredze."</p>
+      </div>
+      <div class="g-card">
+        <div class="g-top"><span class="g-av" style="background:#C13B2A">V</span><span><span class="g-name">Vi Home</span><span class="g-meta" data-en="Google review" data-ru="Отзыв в Google">Google atsauksme</span></span></div>
+        <div class="g-stars">★★★★★ <span class="g-when" data-en="September 2026" data-ru="Сентябрь 2026">2026. gada septembris</span></div>
+        <p class="g-text" data-en="&quot;A very pleasant, warm atmosphere. We had the pork steak and a soup with prawns, mushrooms, chicken and a pleasant heat — and special mention for the buns with salted butter. Everything was simply wonderful; the owner is an amazing, kind woman!&quot;" data-ru="«Очень приятная тёплая атмосфера. Кушали свиной стейк и суп с креветками, грибами, курицей и приятной остротой, отдельное внимание булочкам с солёным маслом. Всё было просто прекрасно, хозяйка удивительная, добрая женщина!»">"Ļoti patīkama, silta atmosfēra. Ēdām cūkgaļas steiku un zupu ar garnelēm, sēnēm, vistu un patīkamu asumu, un īpaši — maizītes ar sālīto sviestu. Viss bija vienkārši brīnišķīgi, saimniece ir apbrīnojama, laba sieviete!"</p>
+      </div>
+      <div class="g-card">
+        <div class="g-top"><span class="g-av" style="background:#0F9D58">J</span><span><span class="g-name">Juris Zvikovs</span><span class="g-meta" data-en="Google review" data-ru="Отзыв в Google">Google atsauksme</span></span></div>
+        <div class="g-stars">★★★★★ <span class="g-when" data-en="July 2026" data-ru="Июль 2026">2026. gada jūlijs</span></div>
+        <p class="g-text" data-en="&quot;I had potato pancakes with salmon. Oh my… Yum, yum. A dish you see everywhere, but what a taste — the taste of home. Highly recommend. And a big portion. Well done, Cepiens!&quot;" data-ru="«Взял картофельные блины с лососем. Ох… Ням-ням. Вроде обычное блюдо, но какой вкус — домашний. Очень рекомендую. И большая порция. Молодцы, Cepiens!»">"Ņēmu kartupeļu pankūkas ar lasi. Ak, vai… Ņamma, ņamma. It kā ejošs ēdiens, bet kas par garšu — mājas garša. Ļoti iesaku. Un liela porcija. Labi darīts, Cepien!"</p>
+      </div>
+      <div class="g-card">
+        <div class="g-top"><span class="g-av" style="background:#8E63CE">J</span><span><span class="g-name">Josh Aaker</span><span class="g-meta" data-en="Google review" data-ru="Отзыв в Google">Google atsauksme</span></span></div>
+        <div class="g-stars">★★★★★ <span class="g-when" data-en="July 2026" data-ru="Июль 2026">2026. gada jūlijs</span></div>
+        <p class="g-text" data-en="&quot;If you don’t get the buffet, get the burger, seriously. The onions were like candy, the cheese was rich but not heavy and the mustard was a perfect tang. A 12 outta 10 burger.&quot;" data-ru="«Если не берёте обед дня — берите бургер, серьёзно. Лук как конфеты, сыр насыщенный, но не тяжёлый, горчица с идеальной остринкой. Бургер на 12 из 10.»">"Ja neņem dienas pusdienas, ņem burgeru, nopietni. Sīpoli bija kā konfektes, siers bagātīgs, bet ne smags, un sinepes ar perfektu asumu. Burgers uz 12 no 10."</p>
+      </div>
+      <div class="g-card">
+        <div class="g-top"><span class="g-av" style="background:#9A7B3C">S</span><span><span class="g-name">Simona Alksne</span><span class="g-meta" data-en="Google review" data-ru="Отзыв в Google">Google atsauksme</span></span></div>
+        <div class="g-stars">★★★★★ <span class="g-when" data-en="June 2026" data-ru="Июнь 2026">2026. gada jūnijs</span></div>
+        <p class="g-text" data-en="&quot;The bass fillet was excellent – perfectly cooked and definitely the highlight of the meal. The friendly pets create a warm and relaxed atmosphere. Many locals keep coming back – they know both the animals and each other, which gives the restaurant a real sense of community.&quot;" data-ru="«Филе окуня было превосходным — идеально приготовлено, главный хит ужина. Дружелюбные питомцы создают тёплую, расслабленную атмосферу. Многие местные возвращаются снова — они знают и животных, и друг друга, здесь настоящее чувство сообщества.»">"Asara fileja bija izcila — ideāli pagatavota, vakara spilgtākais ēdiens. Draudzīgie mājdzīvnieki rada siltu, atslābinātu gaisotni. Daudzi vietējie te atgriežas, viņi pazīst gan dzīvniekus, gan cits citu — te ir īsta kopienas sajūta."</p>
+      </div>
+    </div>
+    <p class="rev-src" style="margin-top:1.5rem"><span data-en="Read all reviews on" data-ru="Все отзывы в">Visas atsauksmes</span> <a href="https://www.google.com/maps/place/Cepiens/@56.9440724,24.0797164,17z/data=!4m6!3m5!1s0x46eed0218efa6c2d:0xf71078ea47e2c963!8m2!3d56.9440724!4d24.0797164!16s%2Fg%2F11c55j95bl" target="_blank" rel="noopener">Google Maps →</a></p>
+  </div>
+</section>
+
+<section class="cta-section">
+  <p class="eyebrow" style="text-align:center;margin-bottom:1rem">Āgenskalns · Meža iela 4A</p>
+  <h2 class="cta-title" data-html data-en="Come and taste<br><em>the master's flavour</em>" data-ru="Приходите попробовать<br><em>вкус мастера</em>">Nāc izbaudīt<br><em>meistara garšu</em></h2>
+  <p class="cta-sub" data-en="Book a table — Wolt coming soon!" data-ru="Бронируйте столик — скоро и Wolt!">Rezervē galdiņu — drīzumā arī Wolt!</p>
+  <div class="cta-row">
+    <a href="#" class="btn-dark" data-reserve data-en="Book a table" data-ru="Забронировать столик">Rezervēt galdiņu</a>
+    <a href="tel:+37122337221" class="cta-link">+371 22 337 221</a>
+    <!-- Wolt poga — atkomentēt, kad esat aktīvi Wolt:
+    <a href="https://wolt.com/en/lva/riga/restaurant/cepiens" target="_blank" rel="noopener" class="btn-dark" style="background:#009DE0">Pasūtīt Wolt</a>
+    -->
+    <a href="https://maps.google.com/?q=Meža+iela+4A,+Rīga" target="_blank" rel="noopener" class="cta-link" data-en="How to find us →" data-ru="Как нас найти →">Kā mūs atrast →</a>
+    <a href="https://www.instagram.com/cepiens" class="cta-link">@cepiens Instagram →</a>
+  </div>
+</section>
+
+
+<!-- ===== DARBA SLUDINĀJUMS — īsais bloks (pilnais teksts: darbs.html) ===== -->
+<section class="job-teaser" id="darbs">
+  <div class="jt-in">
+    <p class="sec-eyebrow" data-en="We are hiring" data-ru="Мы ищем сотрудника">Meklējam komandas biedru</p>
+    <h2 class="jt-title" data-html data-en="Looking for a <em>waiter</em> — Kim's place is open" data-ru="Ищем <em>официанта</em> — место Кима свободно">Meklējam <em>viesmīli</em> Kima vietā</h2>
+    <p class="jt-text" data-en="For two years Kim grew with us — now he is off to university. Monday–Friday 10:00–18:00, weekends and public holidays off, €7/h gross plus tips averaging €20+ a day. Experience is not required — we will teach you. The full advert (in Latvian) and Kim's video are on a separate page." data-ru="Два года Ким рос вместе с нами — теперь он уезжает в университет. Пн–Пт 10:00–18:00, выходные и праздники свободны, 7 €/ч брутто плюс чаевые в среднем от 20 € в день. Опыт не обязателен — научим. Полное объявление (на латышском) и видео Кима — на отдельной странице.">Divus gadus Kims auga kopā ar mums — tagad viņš dodas uz universitāti. Pirmdiena–piektdiena 10:00–18:00, brīvas nedēļas nogales un svētku dienas, 7 €/h bruto plus dzeramnauda vidēji no 20 € dienā un vairāk. Pieredze nav obligāta — iemācīsim. Pilnais sludinājums un Kima video ir atsevišķā lapā.</p>
+    <div class="jt-btns">
+      <a href="darbs.html" class="btn-dark" data-en="See the job advert" data-ru="Смотреть объявление">Skatīt sludinājumu</a>
+      <a href="darbs.html#pieteikties" class="btn-outline" data-en="Apply →" data-ru="Откликнуться →">Pieteikties →</a>
+    </div>
+  </div>
+</section>
+
+
+
+<footer>
+  <div class="footer-logo">Cepiens <span>·</span> Āgenskalns</div>
+  <div class="footer-info" data-html
+       data-en="Meža iela 4A, Riga · Mon–Thu 10:00–21:00 · Fri–Sat 10:00–21:00 · Sun — closed<span id=&quot;augustFooter&quot;><br>Until 30 August: evenings 18:00–22:00 by reservation only · closed 22–23 and 29–30 August</span>"
+       data-ru="Ул. Межа 4A, Рига · Пн–Чт 10:00–21:00 · Пт–Сб 10:00–21:00 · Вс — выходной<span id=&quot;augustFooter&quot;><br>До 30 августа: вечера 18:00–22:00 только по брони · 22–23 и 29–30 августа — закрыто</span>">Meža iela 4A, Rīga · P–Ceturt 10:00–21:00 · Pk–Sestd 10:00–21:00 · Sv — brīvdiena<span id="augustFooter"><br>Līdz 30. augustam: vakari 18:00–22:00 tikai ar rezervāciju · 22.–23. un 29.–30. augustā ciet</span></div>
+  <a href="https://www.instagram.com/cepiens" class="footer-ig">@cepiens</a>
+</footer>
+
+<!-- ===== REZERVĀCIJAS MODĀLIS ===== -->
+<div class="modal-overlay" id="reserveModal" role="dialog" aria-modal="true" aria-labelledby="reserveTitle">
+  <div class="modal-box">
+    <div class="modal-head">
+      <div>
+        <p class="modal-eyebrow">Cepiens · Āgenskalns</p>
+        <h2 class="modal-title" id="reserveTitle" data-html data-en="Book <em>a table</em>" data-ru="Бронь <em>столика</em>">Rezervē <em>galdiņu</em></h2>
+      </div>
+      <button class="modal-close" aria-label="Aizvērt" data-close>&times;</button>
+    </div>
+    <div class="modal-body">
+
+      <!-- ===== AUGUSTA PIEZĪME REZERVĀCIJU LOGĀ (paslēpjas pēc 31.08.2026) ===== -->
+      <div class="rf-notice" id="augustModal">
+        <span data-html
+              data-en="<b>Until 30 August</b> evenings are served <b>18:00–22:00 by reservation only</b>. On <b>22–23 and 29–30 August we are closed</b> — please choose another date. From September we are with you on Saturdays again."
+              data-ru="<b>До 30 августа</b> вечера — <b>18:00–22:00 только по брони</b>. <b>22–23 и 29–30 августа закрыто</b> — пожалуйста, выберите другую дату. С сентября снова с вами и по субботам."><b>Līdz 30. augustam</b> vakaros apkalpojam <b>18:00–22:00 tikai ar rezervāciju</b>. <b>22.–23. un 29.–30. augustā esam ciet</b> — lūdzu, izvēlies citu datumu. No septembra atkal ar jums arī sestdienās.</span>
+      </div>
+
+      <!-- =====================================================================
+           TABLEO REZERVĀCIJU WIDGET
+           ---------------------------------------------------------------------
+           Kad esi reģistrējusies vietnē https://tableo.com/free/ :
+           1. Tableo panelī atver sadaļu "Online Bookings".
+           2. Nokopē ģenerēto iframe / embed kodu.
+           3. Ielīmē to zemāk starp <div id="tableo-widget"> tagiem.
+           4. Izdzēs (vai atstāj komentāru iekšā) VISU Google formas bloku,
+              kas sākas ar <form ... id="reserveForm"> un beidzas ar
+              </div> aiz id="reserveSuccess", lai nav divas sistēmas reizē.
+           Kamēr tableo-widget ir tukšs, rādās Google forma (kā tagad).
+           ===================================================================== -->
+      <div id="tableo-widget"><iframe src="https://app.tableo.com/r/iSEziC0" width="100%" height="100%" style="border:none;min-height:700px" referrerpolicy="unsafe-url"></iframe></div>
+
+      <form class="rform" id="reserveForm" novalidate>
+        <div class="rform-row">
+          <div class="rfield">
+            <label for="rf-people" data-en="Guests" data-ru="Количество гостей">Personu skaits</label>
+            <select id="rf-people" required>
+              <option value="" disabled selected data-en="Select" data-ru="Выберите">Izvēlies</option>
+              <option>1</option><option>2</option><option>3</option><option>4</option>
+              <option>5</option><option>6</option><option>7</option><option>8</option>
+              <option>9</option><option>10</option><option>10+</option>
+            </select>
+          </div>
+          <div class="rfield">
+            <label for="rf-date" data-en="Date" data-ru="Дата">Datums</label>
+            <input type="date" id="rf-date" required>
+          </div>
+        </div>
+        <div class="rform-row">
+          <div class="rfield">
+            <label for="rf-time" data-en="Time" data-ru="Время">Laiks</label>
+            <input type="time" id="rf-time" required>
+          </div>
+          <div class="rfield">
+            <label for="rf-name" data-en="Name" data-ru="Имя">Vārds</label>
+            <input type="text" id="rf-name" autocomplete="name" required>
+          </div>
+        </div>
+        <div class="rform-row">
+          <div class="rfield full">
+            <label for="rf-phone" data-en="Phone" data-ru="Телефон">Telefons</label>
+            <input type="tel" id="rf-phone" autocomplete="tel" required>
+          </div>
+        </div>
+        <div class="rform-row">
+          <div class="rfield full">
+            <label for="rf-notes" data-en="Notes (birthday, celebration, allergies…)" data-ru="Комментарий (день рождения, праздник, аллергии…)">Piezīmes (dzim. diena, izlaidums, alerģijas…)</label>
+            <textarea id="rf-notes" placeholder="Neobligāti" data-en="Optional" data-ru="Необязательно"></textarea>
+          </div>
+        </div>
+        <button type="submit" class="rform-submit" id="rf-submit" data-en="Book a table" data-ru="Забронировать столик">Rezervēt galdiņu</button>
+      </form>
+      <div class="rform-success" id="reserveSuccess" style="display:none">
+        <div class="rs-mark">✓</div>
+        <h3 data-html data-en="Thank you, <em>see you soon!</em>" data-ru="Спасибо, <em>ждём вас!</em>">Paldies, <em>gaidīsim!</em></h3>
+        <p><span data-en="Your booking has been received — see you at Cepiens!" data-ru="Ваша бронь получена — ждём вас в Cepiens!">Tava rezervācija ir saņemta — gaidīsim tevi Cēpienā!</span><br><span data-en="If it's urgent or you need changes — call" data-ru="Если срочно или нужно что-то изменить — звоните">Ja steidzams vai vēlies kaut ko mainīt — zvani</span> <a href="tel:+37122337221" style="color:var(--red)">+371 22 337 221</a>.</p>
+      </div>
+      <div class="modal-fallback" style="border-top:1px solid var(--ink08);background:var(--paper2);padding:1rem 1.8rem;font-size:.8rem;color:var(--ink60);line-height:1.7">
+        <strong style="color:var(--ink)" data-en="Please note:" data-ru="Обратите внимание:">Lūdzu ņemiet vērā:</strong> <span data-en="a 10% service charge applies to groups of more than 4 guests." data-ru="для групп более 4 гостей действует сервисный сбор 10%.">grupām, kas pārsniedz 4 viesus, tiek piemērota 10% apkalpošanas maksa.</span>
+      </div>
+      <div class="modal-fallback">
+        <span data-en="Trouble with the form? Call" data-ru="Проблемы с формой? Звоните">Problēmas ar formu? Zvani</span> <a href="tel:+37122337221">+371 22 337 221</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var modal = document.getElementById('reserveModal');
+
+  function open(e){ if(e) e.preventDefault(); modal.classList.add('open'); document.body.style.overflow='hidden'; }
+  function close(){ modal.classList.remove('open'); document.body.style.overflow=''; }
+
+  // Ja Tableo widget ir ielīmēts, paslēpj Google formu (automātiska pārslēgšanās)
+  var tableoBox = document.getElementById('tableo-widget');
+  if(tableoBox && tableoBox.children.length > 0){
+    var gf = document.getElementById('reserveForm');
+    var gs = document.getElementById('reserveSuccess');
+    if(gf) gf.style.display = 'none';
+    if(gs) gs.style.display = 'none';
+  }
+
+  document.querySelectorAll('[data-reserve]').forEach(function(b){ b.addEventListener('click', open); });
+  modal.querySelectorAll('[data-close]').forEach(function(b){ b.addEventListener('click', close); });
+  modal.addEventListener('click', function(e){ if(e.target === modal) close(); });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape') close(); });
+
+  // Datumam minimums = šodien; svētdienās nestrādājam (brīvdiena).
+  // AUGUSTA BRĪVDIENAS: pēdējās divas nedēļas nogales — atgūstam spēkus.
+  // Kad augusts pagājis, šo sarakstu var atstāt tukšu: var CLOSED_DATES = [];
+  var CLOSED_DATES = ['2026-08-22','2026-08-23','2026-08-29','2026-08-30'];
+  var dateEl = document.getElementById('rf-date');
+  if(dateEl){
+    dateEl.min = new Date().toISOString().split('T')[0];
+    dateEl.addEventListener('input', function(){
+      if(!dateEl.value) return;
+      var lang = window.cepiensLang || 'lv';
+      var day = new Date(dateEl.value + 'T12:00:00').getDay();
+      if(CLOSED_DATES.indexOf(dateEl.value) !== -1){
+        var augMsgs = {
+          lv: 'Augusta pēdējās divas nedēļas nogales (22.–23. un 29.–30.) esam ciet un atgūstam spēkus. Lūdzu, izvēlies citu datumu!',
+          ru: 'Последние два уик-энда августа (22–23 и 29–30) мы закрыты и набираемся сил. Пожалуйста, выберите другую дату!',
+          en: 'On the last two weekends of August (22–23 and 29–30) we are closed and gathering our strength. Please choose another date!'
+        };
+        dateEl.setCustomValidity(augMsgs[lang]);
+        dateEl.reportValidity();
+      } else if(day === 0){
+        var sunMsgs = {
+          lv: 'Svētdienās nestrādājam — tā ir mūsu brīvdiena. Lūdzu, izvēlies citu dienu!',
+          ru: 'По воскресеньям мы не работаем — это наш выходной. Пожалуйста, выберите другой день!',
+          en: "We're closed on Sundays — it's our day off. Please choose another day!"
+        };
+        dateEl.setCustomValidity(sunMsgs[lang]);
+        dateEl.reportValidity();
+      } else {
+        dateEl.setCustomValidity('');
+      }
+    });
+  }
+
+  // Formas iesniegšana uz Google Forms (atbildes nonāk Google izklājlapā)
+  var FORM_ACTION = 'https://docs.google.com/forms/d/e/1FAIpQLSc0qz-na6mDNxlqgjUpe_pwyUZ66qbtNGSw6B2Z0MHIIUMyhQ/formResponse';
+  var form = document.getElementById('reserveForm');
+  var success = document.getElementById('reserveSuccess');
+  var submitBtn = document.getElementById('rf-submit');
+
+  if(form){
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      if(!form.checkValidity()){ form.reportValidity(); return; }
+
+      var d = document.getElementById('rf-date').value.split('-');   // [YYYY,MM,DD]
+      var t = document.getElementById('rf-time').value.split(':');   // [HH,MM]
+      var notes = document.getElementById('rf-notes').value.trim();
+      var people = document.getElementById('rf-people').value;
+
+      var params = new URLSearchParams();
+      params.append('entry.888907876_year',  d[0]);
+      params.append('entry.888907876_month', d[1]);
+      params.append('entry.888907876_day',   d[2]);
+      params.append('entry.1863336440_hour',   t[0]);
+      params.append('entry.1863336440_minute', t[1]);
+      params.append('entry.746874818',  document.getElementById('rf-name').value.trim());
+      params.append('entry.1504583125', document.getElementById('rf-phone').value.trim());
+      params.append('entry.130276582',  people);
+      if(notes){ params.append('entry.2120971057', notes); }
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sūta…';
+
+      fetch(FORM_ACTION, { method:'POST', mode:'no-cors', body:params })
+        .then(showDone).catch(showDone);
+
+      function showDone(){
+        form.style.display = 'none';
+        success.style.display = 'block';
+      }
+    });
+  }
+})();
+</script>
+
+
+<!-- ===== APTAUJAS MODĀLIS ===== -->
+<div class="modal-overlay" id="surveyModal" role="dialog" aria-modal="true" aria-labelledby="surveyTitle">
+  <div class="modal-box">
+    <div class="modal-head">
+      <div>
+        <p class="modal-eyebrow" data-lv="Cepiens · Tavs viedoklis" data-ru="Cepiens · Ваше мнение" data-en="Cepiens · Your opinion">Cepiens · Tavs viedoklis</p>
+        <h2 class="modal-title" id="surveyTitle" data-lv="2 minūtes par ideālo Cepiens" data-ru="2 минуты о вашем идеальном Cepiens" data-en="2 minutes about your perfect Cepiens">2 minūtes par ideālo Cepiens</h2>
+      </div>
+      <button class="modal-close" aria-label="Aizvērt" data-survey-close>&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="slangs">
+        <button type="button" data-sl="lv" class="active">LV</button>
+        <button type="button" data-sl="ru">RU</button>
+        <button type="button" data-sl="en">EN</button>
+      </div>
+      <p class="sintro" data-lv="Mums ir svarīgs jūsu viedoklis! Aizpildiet anketu un nāciet ciemos — par aizpildītu anketu uzsauksim jums kafiju!" data-ru="Нам важно ваше мнение! Заполните анкету и приходите в гости — за заполненную анкету угостим вас кофе!" data-en="Your opinion matters to us! Fill in the survey and come visit — we'll treat you to a coffee for a completed survey!">Mums ir svarīgs jūsu viedoklis! Aizpildiet anketu un nāciet ciemos — par aizpildītu anketu uzsauksim jums kafiju!</p>
+      <form class="sform" name="cepiens-anketa" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" id="surveyForm">
+        <input type="hidden" name="form-name" value="cepiens-anketa">
+        <p hidden><label>Neaizpildi: <input name="bot-field"></label></p>
+    <div class="sfield">
+      <p class="sq" data-lv="1. Kad tu visbiežāk nāc pie mums?" data-ru="1. Когда вы чаще всего приходите к нам?" data-en="1. When do you usually come to us?">1. Kad tu visbiežāk nāc pie mums?</p>
+      <label class="sopt"><input type="radio" name="q1" value="breakfast"><span data-lv="Brokastīs (no rīta)" data-ru="На завтрак (утром)" data-en="Breakfast (morning)">Brokastīs (no rīta)</span></label>
+      <label class="sopt"><input type="radio" name="q1" value="lunch"><span data-lv="Pusdienās" data-ru="На обед" data-en="Lunch">Pusdienās</span></label>
+      <label class="sopt"><input type="radio" name="q1" value="evening"><span data-lv="Vakarā / vakariņās" data-ru="Вечером / на ужин" data-en="Evening / dinner">Vakarā / vakariņās</span></label>
+      <label class="sopt"><input type="radio" name="q1" value="varies"><span data-lv="Dažādi" data-ru="По-разному" data-en="It varies">Dažādi</span></label>
+    </div>
+    <div class="sfield">
+      <p class="sq" data-lv="2. Cik bieži esi pie mums?" data-ru="2. Как часто вы у нас бываете?" data-en="2. How often are you here?">2. Cik bieži esi pie mums?</p>
+      <label class="sopt"><input type="radio" name="q2" value="first"><span data-lv="Pirmoreiz" data-ru="Впервые" data-en="First time">Pirmoreiz</span></label>
+      <label class="sopt"><input type="radio" name="q2" value="sometimes"><span data-lv="Reizēm" data-ru="Иногда" data-en="Now and then">Reizēm</span></label>
+      <label class="sopt"><input type="radio" name="q2" value="weekly"><span data-lv="~1x nedēļā" data-ru="~1 раз в неделю" data-en="~1x a week">~1x nedēļā</span></label>
+      <label class="sopt"><input type="radio" name="q2" value="multi"><span data-lv="Vairākas reizes nedēļā" data-ru="Несколько раз в неделю" data-en="Several times a week">Vairākas reizes nedēļā</span></label>
+    </div>
+    <div class="sfield">
+      <p class="sq" data-lv="3. Ar ko parasti nāc pie mums?" data-ru="3. С кем вы обычно приходите?" data-en="3. Who do you usually come with?">3. Ar ko parasti nāc pie mums?</p>
+      <label class="sopt"><input type="radio" name="q_with" value="alone"><span data-lv="Viens/-a" data-ru="Один/одна" data-en="On my own">Viens/-a</span></label>
+      <label class="sopt"><input type="radio" name="q_with" value="colleagues"><span data-lv="Ar kolēģiem" data-ru="С коллегами" data-en="With colleagues">Ar kolēģiem</span></label>
+      <label class="sopt"><input type="radio" name="q_with" value="family"><span data-lv="Ar ģimeni" data-ru="С семьёй" data-en="With family">Ar ģimeni</span></label>
+      <label class="sopt"><input type="radio" name="q_with" value="friends"><span data-lv="Ar draugiem" data-ru="С друзьями" data-en="With friends">Ar draugiem</span></label>
+      <label class="sopt"><input type="radio" name="q_with" value="date"><span data-lv="Randiņā" data-ru="На свидании" data-en="On a date">Randiņā</span></label>
+    </div>
+    <div class="sfield">
+      <p class="sq" data-lv="4. Kā uzzināji par mums?" data-ru="4. Как вы узнали о нас?" data-en="4. How did you hear about us?">4. Kā uzzināji par mums?</p>
+      <label class="sopt"><input type="radio" name="q_channel" value="google"><span data-lv="Google / meklētājs" data-ru="Google / поиск" data-en="Google / search">Google / meklētājs</span></label>
+      <label class="sopt"><input type="radio" name="q_channel" value="instagram"><span data-lv="Instagram" data-ru="Instagram" data-en="Instagram">Instagram</span></label>
+      <label class="sopt"><input type="radio" name="q_channel" value="facebook"><span data-lv="Facebook" data-ru="Facebook" data-en="Facebook">Facebook</span></label>
+      <label class="sopt"><input type="radio" name="q_channel" value="wom"><span data-lv="Draugu / paziņu ieteikums" data-ru="Рекомендация друзей" data-en="Friends' recommendation">Draugu / paziņu ieteikums</span></label>
+      <label class="sopt"><input type="radio" name="q_channel" value="passby"><span data-lv="Gāju garām, pamanīju" data-ru="Проходил(а) мимо" data-en="Walked past, noticed it">Gāju garām, pamanīju</span></label>
+      <label class="sopt"><input type="radio" name="q_channel" value="known"><span data-lv="Sen zinu" data-ru="Знаю давно" data-en="Known it a long time">Sen zinu</span></label>
+      <label class="sopt"><input type="radio" name="q_channel" value="other"><span data-lv="Cits" data-ru="Другое" data-en="Other">Cits</span></label>
+    </div>
+    <div class="sfield">
+      <p class="sq" data-lv="5. Kas tev vissvarīgākais, izvēloties, kur ēst? (atzīmē līdz 2)" data-ru="5. Что для вас важнее всего при выборе, где поесть? (до 2)" data-en="5. What matters most when choosing where to eat? (pick up to 2)">5. Kas tev vissvarīgākais, izvēloties, kur ēst? (atzīmē līdz 2)</p>
+      <label class="sopt"><input type="checkbox" name="q3" value="taste"><span data-lv="Garša / kvalitāte" data-ru="Вкус / качество" data-en="Taste / quality">Garša / kvalitāte</span></label>
+      <label class="sopt"><input type="checkbox" name="q3" value="speed"><span data-lv="Ātrums" data-ru="Скорость" data-en="Speed">Ātrums</span></label>
+      <label class="sopt"><input type="checkbox" name="q3" value="price"><span data-lv="Cena" data-ru="Цена" data-en="Price">Cena</span></label>
+      <label class="sopt"><input type="checkbox" name="q3" value="atmosphere"><span data-lv="Atmosfēra" data-ru="Атмосфера" data-en="Atmosphere">Atmosfēra</span></label>
+      <label class="sopt"><input type="checkbox" name="q3" value="location"><span data-lv="Vieta / tuvums" data-ru="Место / близость" data-en="Location / nearby">Vieta / tuvums</span></label>
+      <label class="sopt"><input type="checkbox" name="q3" value="healthy"><span data-lv="Veselīgi" data-ru="Полезно" data-en="Healthy">Veselīgi</span></label>
+      <label class="sopt"><input type="checkbox" name="q3" value="kids"><span data-lv="Bērniem draudzīgi" data-ru="Дружелюбно к детям" data-en="Kid-friendly">Bērniem draudzīgi</span></label>
+    </div>
+    <div class="sfield">
+      <p class="sq" data-lv="6. BROKASTIS — kas liktu nākt biežāk no rīta?" data-ru="6. ЗАВТРАК — что заставило бы приходить по утрам чаще?" data-en="6. BREAKFAST — what would make you come more often in the morning?">6. BROKASTIS — kas liktu nākt biežāk no rīta?</p>
+      <label class="sopt"><input type="radio" name="q4" value="brunchset"><span data-lv="Branča sets (karstais + kafija + deserts)" data-ru="Бранч-сет (горячее + кофе + десерт)" data-en="Brunch set (hot dish + coffee + dessert)">Branča sets (karstais + kafija + deserts)</span></label>
+      <label class="sopt"><input type="radio" name="q4" value="healthy"><span data-lv="Veselīgas opcijas" data-ru="Полезные опции" data-en="Healthy options">Veselīgas opcijas</span></label>
+      <label class="sopt"><input type="radio" name="q4" value="togo"><span data-lv="Ātri „līdzi“" data-ru="Быстро «с собой»" data-en="Quick to-go">Ātri „līdzi“</span></label>
+      <label class="sopt"><input type="radio" name="q4" value="hours"><span data-lv="Garāks brokastu laiks" data-ru="Более долгое время завтрака" data-en="Longer breakfast hours">Garāks brokastu laiks</span></label>
+      <label class="sopt"><input type="radio" name="q4" value="nomorning"><span data-lv="Nenāku no rīta" data-ru="Не хожу по утрам" data-en="I don't come mornings">Nenāku no rīta</span></label>
+    </div>
+    <div class="sfield">
+      <p class="sq" data-lv="7. PUSDIENAS — cena, ko maksātu par ideālo biznesa lanču:" data-ru="7. ОБЕД — цена за идеальный бизнес-ланч:" data-en="7. LUNCH — price you'd pay for a perfect business lunch:">7. PUSDIENAS — cena, ko maksātu par ideālo biznesa lanču:</p>
+      <label class="sopt"><input type="radio" name="q5_price" value="7-8"><span data-lv="7–8€" data-ru="7–8€" data-en="7–8€">7–8€</span></label>
+      <label class="sopt"><input type="radio" name="q5_price" value="9-11"><span data-lv="9–11€" data-ru="9–11€" data-en="9–11€">9–11€</span></label>
+      <label class="sopt"><input type="radio" name="q5_price" value="12+"><span data-lv="12€+" data-ru="12€+" data-en="12€+">12€+</span></label>
+      <p class="ssub" data-lv="…un kas pusdienās svarīgākais?" data-ru="…и что важнее всего в обеде?" data-en="…and what matters most at lunch?">…un kas pusdienās svarīgākais?</p>
+      <label class="sopt"><input type="radio" name="q5_focus" value="speed"><span data-lv="Ātrums" data-ru="Скорость" data-en="Speed">Ātrums</span></label>
+      <label class="sopt"><input type="radio" name="q5_focus" value="choice"><span data-lv="Izvēle" data-ru="Выбор" data-en="Choice">Izvēle</span></label>
+      <label class="sopt"><input type="radio" name="q5_focus" value="filling"><span data-lv="Sātīgums" data-ru="Сытность" data-en="Filling">Sātīgums</span></label>
+      <label class="sopt"><input type="radio" name="q5_focus" value="healthy"><span data-lv="Veselīgi" data-ru="Полезно" data-en="Healthy">Veselīgi</span></label>
+    </div>
+    <div class="sfield">
+      <p class="sq" data-lv="8. VAKARIŅAS — cik bieži ej uz nesteidzīgām vakariņām restorānā?" data-ru="8. УЖИН — как часто ходите на неспешный ужин в ресторан?" data-en="8. DINNER — how often do you go out for a relaxed dinner?">8. VAKARIŅAS — cik bieži ej uz nesteidzīgām vakariņām restorānā?</p>
+      <label class="sopt"><input type="radio" name="q6_freq" value="often"><span data-lv="Bieži" data-ru="Часто" data-en="Often">Bieži</span></label>
+      <label class="sopt"><input type="radio" name="q6_freq" value="sometimes"><span data-lv="Reizēm" data-ru="Иногда" data-en="Sometimes">Reizēm</span></label>
+      <label class="sopt"><input type="radio" name="q6_freq" value="rarely"><span data-lv="Reti" data-ru="Редко" data-en="Rarely">Reti</span></label>
+      <p class="ssub" data-lv="…komforta čeks uz personu vakariņām:" data-ru="…комфортный чек на человека за ужин:" data-en="…comfortable spend per person for dinner:">…komforta čeks uz personu vakariņām:</p>
+      <label class="sopt"><input type="radio" name="q6_check" value="<20"><span data-lv="līdz 20€" data-ru="до 20€" data-en="up to 20€">līdz 20€</span></label>
+      <label class="sopt"><input type="radio" name="q6_check" value="20-30"><span data-lv="20–30€" data-ru="20–30€" data-en="20–30€">20–30€</span></label>
+      <label class="sopt"><input type="radio" name="q6_check" value="30+"><span data-lv="30€+" data-ru="30€+" data-en="30€+">30€+</span></label>
+    </div>
+    <div class="sfield">
+      <p class="sq" data-lv="9. Vai zināji, ka Cepiens vakaros piedāvā pilnvērtīgas à la carte vakariņas (steiki, zivs, vīns)?" data-ru="9. Знали, что вечером Cepiens предлагает ужины à la carte (стейки, рыба, вино)?" data-en="9. Did you know Cepiens serves full à la carte dinners in the evening (steaks, fish, wine)?">9. Vai zināji, ka Cepiens vakaros piedāvā pilnvērtīgas à la carte vakariņas (steiki, zivs, vīns)?</p>
+      <label class="sopt"><input type="radio" name="q7" value="yes"><span data-lv="Jā" data-ru="Да" data-en="Yes">Jā</span></label>
+      <label class="sopt"><input type="radio" name="q7" value="no"><span data-lv="Nē — domāju, tikai brokastis/pusdienas" data-ru="Нет — думал(а), только завтраки/обеды" data-en="No — I thought it was just breakfast/lunch">Nē — domāju, tikai brokastis/pusdienas</span></label>
+    </div>
+    <div class="sfield">
+      <p class="sq" data-lv="10. Kas tevi attur nākt biežāk?" data-ru="10. Что мешает приходить чаще?" data-en="10. What keeps you from coming more often?">10. Kas tevi attur nākt biežāk?</p>
+      <label class="sopt"><input type="checkbox" name="q8" value="forget"><span data-lv="Aizmirstu / nav ieraduma" data-ru="Забываю / нет привычки" data-en="I forget / no habit">Aizmirstu / nav ieraduma</span></label>
+      <label class="sopt"><input type="checkbox" name="q8" value="price"><span data-lv="Cena" data-ru="Цена" data-en="Price">Cena</span></label>
+      <label class="sopt"><input type="checkbox" name="q8" value="unknown"><span data-lv="Nezinu vakara piedāvājumu" data-ru="Не знаю вечернее предложение" data-en="Didn't know the evening offer">Nezinu vakara piedāvājumu</span></label>
+      <label class="sopt"><input type="checkbox" name="q8" value="time"><span data-lv="Laiks / grafiks" data-ru="Время / график" data-en="Time / schedule">Laiks / grafiks</span></label>
+      <label class="sopt"><input type="checkbox" name="q8" value="noone"><span data-lv="Nav ar ko" data-ru="Не с кем" data-en="No one to come with">Nav ar ko</span></label>
+      <label class="sopt"><input type="checkbox" name="q8" value="regular"><span data-lv="Nekas, nāku regulāri" data-ru="Ничего, хожу регулярно" data-en="Nothing, I come regularly">Nekas, nāku regulāri</span></label>
+    </div>
+    <div class="sfield">
+      <p class="sq" data-lv="11. Cik ļoti ieteiktu Cepiens draugam?" data-ru="11. Насколько вы порекомендуете Cepiens другу?" data-en="11. How likely are you to recommend Cepiens to a friend?">11. Cik ļoti ieteiktu Cepiens draugam?</p>
+      <div class="snps">
+        <label><input type="radio" name="q_nps" value="0"><span>0</span></label>
+        <label><input type="radio" name="q_nps" value="1"><span>1</span></label>
+        <label><input type="radio" name="q_nps" value="2"><span>2</span></label>
+        <label><input type="radio" name="q_nps" value="3"><span>3</span></label>
+        <label><input type="radio" name="q_nps" value="4"><span>4</span></label>
+        <label><input type="radio" name="q_nps" value="5"><span>5</span></label>
+        <label><input type="radio" name="q_nps" value="6"><span>6</span></label>
+        <label><input type="radio" name="q_nps" value="7"><span>7</span></label>
+        <label><input type="radio" name="q_nps" value="8"><span>8</span></label>
+        <label><input type="radio" name="q_nps" value="9"><span>9</span></label>
+        <label><input type="radio" name="q_nps" value="10"><span>10</span></label>
+        <div class="nleg"><span data-lv="0 = nekad" data-ru="0 = никогда" data-en="0 = never">0 = nekad</span><span data-lv="10 = noteikti" data-ru="10 = обязательно" data-en="10 = definitely">10 = noteikti</span></div>
+      </div>
+    </div>
+    <div class="sfield">
+      <p class="sq" data-lv="12. Atstāj mums atsauksmi! Kas tev visgaršīgākais, un kā tev patīk mūsu pūkainie?" data-ru="12. Оставьте отзыв! Что вам вкуснее всего и как вам наши пушистые?" data-en="12. Leave us a review! What do you love most, and how do you like our furry ones?">12. Atstāj mums atsauksmi! Kas tev visgaršīgākais, un kā tev patīk mūsu pūkainie?</p>
+      <textarea name="q_review" rows="3" placeholder="Tava atsauksme…" data-lv="Tava atsauksme…" data-ru="Ваш отзыв…" data-en="Your review…"></textarea>
+      <label class="sopt"><input type="checkbox" name="review_consent" value="yes"><span data-lv="Drīkstam to dalīt soc. tīklos" data-ru="Можно поделиться в соцсетях" data-en="You may share it on social media">Drīkstam to dalīt soc. tīklos</span></label>
+    </div>
+    <div class="sfield">
+      <p class="sq" data-lv="13. Gribi pirmais uzzināt par jaunumiem un testa piedāvājumiem? Atstāj kontaktu:" data-ru="13. Хотите первым узнавать о новинках и тестовых предложениях? Оставьте контакт:" data-en="13. Want to be first to hear about news &amp; test offers? Leave your contact:">13. Gribi pirmais uzzināt par jaunumiem un testa piedāvājumiem? Atstāj kontaktu:</p>
+      <input type="text" name="name" placeholder="Vārds" data-lv="Vārds" data-ru="Имя" data-en="Name">
+      <input type="text" name="contact" placeholder="IG / tālrunis / e-pasts" data-lv="IG / tālrunis / e-pasts" data-ru="IG / телефон / e-mail" data-en="IG / phone / e-mail">
+      <label class="sopt"><input type="checkbox" name="consent" value="yes"><span data-lv="Drīkstu sazināties" data-ru="Можно связаться" data-en="You may contact me">Drīkstu sazināties</span></label>
+    </div>
+        <button type="submit" class="ssubmit" data-lv="Nosūtīt anketu" data-ru="Отправить анкету" data-en="Send the survey">Nosūtīt anketu</button>
+      </form>
+      <div class="ssuccess" id="surveySuccess">
+        <div class="rs-mark">✓</div>
+        <h3 data-lv="Paldies!" data-ru="Спасибо!" data-en="Thank you!">Paldies!</h3>
+        <p data-lv="Nāc ciemos un pasaki, ka aizpildīji anketu — kafija no mums!" data-ru="Приходите и скажите, что заполнили анкету — кофе за наш счёт!" data-en="Come visit and mention you filled the survey — coffee on us!">Nāc ciemos un pasaki, ka aizpildīji anketu — kafija no mums!</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var modal = document.getElementById('surveyModal');
+  if(!modal) return;
+  function setSLang(l){
+    modal.querySelectorAll('[data-lv]').forEach(function(el){
+      var v = el.getAttribute('data-'+l); if(v===null) return;
+      if(el.tagName==='TEXTAREA' || el.tagName==='INPUT'){ el.setAttribute('placeholder', v); } else { el.textContent = v; }
+    });
+    modal.querySelectorAll('.slangs button').forEach(function(b){ b.classList.toggle('active', b.getAttribute('data-sl')===l); });
+  }
+  modal.querySelectorAll('.slangs button').forEach(function(b){ b.addEventListener('click', function(){ setSLang(b.getAttribute('data-sl')); }); });
+  function openS(e){ if(e) e.preventDefault(); modal.classList.add('open'); document.body.style.overflow='hidden'; }
+  function closeS(){ modal.classList.remove('open'); document.body.style.overflow=''; if(location.hash==='#anketa'){ history.replaceState(null,'',location.pathname); } }
+  document.querySelectorAll('[data-survey]').forEach(function(b){ b.addEventListener('click', openS); });
+  modal.querySelectorAll('[data-survey-close]').forEach(function(b){ b.addEventListener('click', closeS); });
+  modal.addEventListener('click', function(e){ if(e.target===modal) closeS(); });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeS(); });
+  /* aptauja izslēgta līdz pabeigšanai */
+  
+  var form = document.getElementById('surveyForm');
+  var success = document.getElementById('surveySuccess');
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var data = new URLSearchParams(new FormData(form)).toString();
+    fetch('/', { method:'POST', headers:{'Content-Type':'application/x-www-form-urlencoded'}, body:data })
+      .then(done).catch(done);
+    function done(){ form.style.display='none'; success.style.display='block'; }
+  });
+})();
+</script>
+
+<script>
+/* ===== AUGUSTA PAZIŅOJUMS — automātiska paslēpšanās =====
+   Pēc AUG_END datuma (ieskaitot to dienu) visi augusta paziņojumi lapā pazūd paši:
+   josla lapas augšā, piezīme darba laika sadaļā, rindiņa kājenē un piezīme rezervāciju logā.
+   Ja vajag pagarināt vai saīsināt — maini tikai AUG_END. */
+(function(){
+  var AUG_END = '2026-08-31';                       // pēdējā diena, kad paziņojums vēl redzams
+  var today = new Date();
+  var iso = today.getFullYear() + '-' +
+            String(today.getMonth()+1).padStart(2,'0') + '-' +
+            String(today.getDate()).padStart(2,'0');
+  if(iso > AUG_END){
+    ['augustNotice','augustHours','augustFooter','augustModal'].forEach(function(id){
+      var el = document.getElementById(id);
+      if(el) el.style.display = 'none';
+    });
+    // Kājenes rindiņa dzīvo arī tulkojumos — noņemam to no visām valodām
+    var f = document.querySelector('.footer-info');
+    if(f){
+      ['lv','en','ru'].forEach(function(l){
+        var v = f.getAttribute('data-'+l);
+        if(v) f.setAttribute('data-'+l, v.replace(/<span id="augustFooter">[\s\S]*?<\/span>/,''));
+      });
+    }
+  }
+})();
+</script>
+
+<script>
+/* Valodu pārslēgšana (LV / RU / EN) visai lapai */
+(function(){
+  var LKEY = 'cepiensLang';
+  window.cepiensLang = 'lv';
+  function apply(l){
+    document.documentElement.lang = l;
+    document.querySelectorAll('[data-en]').forEach(function(el){
+      // Saglabā oriģinālo LV tekstu pirmajā reizē
+      if(!el.hasAttribute('data-lv')){
+        if(el.hasAttribute('data-html')){ el.setAttribute('data-lv', el.innerHTML); }
+        else if(el.tagName==='TEXTAREA' || el.tagName==='INPUT'){ el.setAttribute('data-lv', el.getAttribute('placeholder')||''); }
+        else { el.setAttribute('data-lv', el.textContent); }
+      }
+      var v = el.getAttribute('data-'+l);
+      if(v===null) return;
+      if(el.hasAttribute('data-html')){ el.innerHTML = v; }
+      else if(el.tagName==='TEXTAREA' || el.tagName==='INPUT'){ el.setAttribute('placeholder', v); }
+      else { el.textContent = v; }
+    });
+    document.querySelectorAll('.langs button').forEach(function(b){ b.classList.toggle('active', b.getAttribute('data-lang')===l); });
+    document.querySelectorAll('.slangs button').forEach(function(b){ b.classList.toggle('active', b.getAttribute('data-sl')===l); });
+    window.cepiensLang = l;
+    try{ localStorage.setItem(LKEY, l); }catch(e){}
+  }
+  document.querySelectorAll('.langs button').forEach(function(b){
+    b.addEventListener('click', function(){ apply(b.getAttribute('data-lang')); });
+  });
+  var saved = 'lv';
+  try{ saved = localStorage.getItem(LKEY) || 'lv'; }catch(e){}
+  if(saved !== 'lv') apply(saved);
+})();
+</script>
+
+<script>
+/* Mobilā izvēlne (hamburger) */
+(function(){
+  var navEl = document.querySelector('nav');
+  var burger = document.querySelector('[data-burger]');
+  if(!navEl || !burger) return;
+  burger.addEventListener('click', function(){
+    var open = navEl.classList.toggle('open');
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  navEl.querySelectorAll('.nav-links a').forEach(function(a){
+    a.addEventListener('click', function(){
+      navEl.classList.remove('open');
+      burger.setAttribute('aria-expanded','false');
+    });
+  });
+  document.addEventListener('click', function(e){
+    if(navEl.classList.contains('open') && !navEl.contains(e.target)){
+      navEl.classList.remove('open');
+      burger.setAttribute('aria-expanded','false');
+    }
+  });
+})();
+</script>
+
+<script async src="https://www.instagram.com/embed.js"></script>
+</body>
+</html>
